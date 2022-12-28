@@ -13,20 +13,24 @@
 <body>
     <header>
         <div class="container container-flex">
-            <div class="logo-quote">
+            <div class="logo-quote container-flex">
                 <img class = "logo" src="../images/logo.jpg" alt="">
-                <div class="quote">Best tutor in town</div>
+                <div class="quote h-text">Best tutor in town</div>
             </div>
 
             <div class="nav-sign">
-                <i class='icon bx bx-menu'></i>
-                <ul class = "navbar" >
+                <button class = "icon icon-button" >
+                    <i class='bx bx-menu'></i>
+                </button>
+                <ul class = "navbar h-text navbar-collapse" >
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">FAQs</a></li>
+
+                    <button class= "log-in">Login</button>
+                    <button class= "sign-up">Sign up</button>
                 </ul>
-                <button class= "log-in">Login</button>
-                <button class= "sign-up">Sign up</button>
+             
 
             </div>
 
@@ -35,5 +39,6 @@
             <div class="container"></div>
         </div>
     </header>
+    <script src = "../js/script.js" > </script>
 </body>
 </html>
