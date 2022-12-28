@@ -1,0 +1,46 @@
+/* layout */
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 600px){
+    .container-flex{
+        flex-direction: row;
+
+    }
+}
+
+.logo{
+    height: 100px;
+}
+
+.nav-sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-quote{
+    margin-bottom: 1em;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    margin: 0.5em;
+}
+
+button{
+    margin: 0.3em;
+}
+
+/* typography */
+
