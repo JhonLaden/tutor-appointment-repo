@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+:root{
+    --h-text: #3D5BFC;
+    --dark-2: #1a1f27;
+    --text-color: #a5a9ac;
+    --secondary-color: #c48af9;
+    --blue-berry: #2d3b41;
+    --sea: #1da5ff;
+    
+    --trans-05: all 0.5s ease;
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-weight: 400;
     box-sizing: border-box;
+    font-family: 'roboto' ;
+
 }
 
-body{
-    font-family: 'roboto' ;
-}
 
 a{
     text-decoration: none;
@@ -21,14 +32,34 @@ ul{
 
 .container{
     width: 90%;
+    max-width: 1290px;
     margin: 0 auto;
 }
 
+.container-fluid{
+    width: 100%;
+}
+
+.bg-gray{
+    background-color: gray;
+}
+
 button{
+
     cursor: pointer;
-    border: none;
     background-color: none;
     color: none;
+    padding: 0.5em;
+    border: 1px solid var(--h-text);
+    border-radius: 5px;
+}
+
+.fluid-height{
+    height: 100%;
+}
+
+.fluid-weight{
+    width: 100%;
 }
 
 
