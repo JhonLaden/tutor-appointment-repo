@@ -42,6 +42,7 @@ font-size: 1rem;
 
 .wall-sub-title{
 font-size: 2rem;
+text-align: center;
 }
 
 .wall img{
@@ -110,11 +111,6 @@ color: var(--h-text);
 
 }
 
-.navbar-collapse{
-    display: flex;
-    transition: all 0.5s ease;
-}
-
 .log-in{
     color: var(--h-text);
     padding: 0.5em;
@@ -142,11 +138,15 @@ color: var(--h-text);
     color: #fff;
 }
 
-ul{
+.navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all ease 1s;
+}
+
+.navbar-collapse{
+    display: none;
 }
 
 li{
@@ -208,13 +208,8 @@ button{
 }
 
 .pic-description .title{
+    color: #7387F1;
     margin-bottom: 1em;
-}
-
-
-.pic-description{
-    background-color: gray;
-    color: #fff
 }
 
 
@@ -232,12 +227,9 @@ button{
     .pic-description .description{
         width: 40%;
     }
-
-    .pic-description:nth-child(even){
+    .reversed{
         flex-direction: row-reverse;
-        background-color: gray;
     }
-
 
 }
 
@@ -251,4 +243,66 @@ button{
     .pic-description .description{
         font-size: 1.2rem;
     }
+}
+
+/* footer */
+footer{
+    padding: 3em 0;
+}
+.footer-bg{
+    background-color: #303030;
+    color: #fff;
+}
+
+/* layout */
+.info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.info div h1,
+.info div h2,
+.info div p,
+.info div li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.platforms-logo ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon{
+    font-size: 2rem;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* typography */
+footer h2{
+    color: var(--h-text);   
+}
+
+
+@media (min-width: 850px){
+    .info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info div{
+        align-items: flex-start;
+    }
+    .info div h1,
+    .info div h2,
+    .info div p,
+    .info div li{
+        align-items: flex-start;
+    }
+
 }
