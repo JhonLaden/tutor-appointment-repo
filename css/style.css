@@ -8,25 +8,25 @@ justify-content: space-between;
 }
 
 @media (min-width: 850px){
-.container-flex{
-    flex-direction: row;
+    .container-flex{
+        flex-direction: row;
+    }
+}
 
-}
-}
 
 .wall{
-height: 280px;
-position: relative;
+    height: 250px;
+    position: relative;
 }
 
-.wall-bg{
-background-color: var(--h-text);
-color: #fff;
+.wall-bg-home{
+    background-color: var(--h-text);
+    color: #fff;
 }  
 
 .wall-body{
-display: flex;
-border-bottom: 1px solid #fff;
+    display: flex;
+    border-bottom: 1px solid #fff;
 }
 
 .container-wall{
@@ -50,20 +50,38 @@ display: none;
 }
 
 @media (min-width: 810px){
-.container-wall{
-    flex-direction: row;
+    .container-wall{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .wall-body{
+        flex-direction: column;
+        align-items: start;
+    }
+    .wall img{
+        display: block;
+        height: 100%;
+        max-height: 100%;
+        padding-right: 1em;
+    }
+}
+
+/* header */
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    transition: all ease var(--trans-01);
+    z-index: 1;
+}
+
+.container-header{
+    display: flex;
     justify-content: space-between;
-    
-}
-.wall-body{
-    flex-direction: column;
-    align-items: start;
-}
-.wall img{
-    display: block;
-    max-height: 100%;
-    padding-right: 1em;
-}
+    align-items: center;
+   
 }
 
 .logo{
@@ -72,12 +90,17 @@ display: none;
 
 .quote{
     margin-top: -0.5em;
+    display: none;
 
 }
 
 .logo-quote{
 margin-bottom: 0.5em;
 
+}
+
+.join{
+    cursor: pointer;
 }
 
 .h-text{
@@ -87,12 +110,16 @@ color: var(--h-text);
 @media (min-width: 850px){
     .logo-quote{
     margin-bottom: 0;
-}
+    }
     .quote{
         margin-top: 0;
         border-left: 1px solid gray;
         padding-left: 0.5em;
-}
+        display: block;
+    }
+    
+
+
 }
 
 /* navigation */
@@ -105,10 +132,41 @@ color: var(--h-text);
 }
 
 .navbar{
-    display: none;
-    margin-bottom: 1em;
-/* ERROR: transition is now working */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    margin-bottom: 1em;
+    position: absolute;
+    left: -100%;
+    top: 107.996px;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 0;
+    transition: var(--trans-05);
+}
+
+li{
+    margin: 0.5em; 
+}
+
+.active, 
+ul li a.nav-link:hover{
+    border-bottom: 2px solid var(--h-text);
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+.log-in:hover{
+    background-color: var(--h-text);
+    color: #fff;
 }
 
 .log-in{
@@ -116,6 +174,7 @@ color: var(--h-text);
     padding: 0.5em;
     border: 1px solid var(--h-text);
     border-radius: 5px;
+    margin-top: 1rem;
     transition: var(--trans-05)
 }
 
@@ -124,44 +183,18 @@ color: var(--h-text);
     color: #fff
 }
 
+button{
+    margin-bottom: 0.3em;   
+}
+
 .icon{
+    font-size: 1.8rem;
     display: block;
 }
 
 .icon-button{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     cursor: pointer;
-}
-
-.log-in:hover{
-    background-color: var(--h-text);
-    color: #fff;
-}
-
-.navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all ease 1s;
-}
-
-.navbar-collapse{
-    display: none;
-}
-
-li{
-    margin: 0.5em;
-    
-}
-
-
-.active, 
-ul li a.nav-link:hover{
-    border-bottom: 2px solid var(--h-text);
-}
-
-button{
-    margin-bottom: 0.3em;   
 }
 
 
@@ -173,6 +206,12 @@ button{
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
+        height: 100%;
+        width: fit-content;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        position: relative;
     }
     .icon{
         display: none;
@@ -180,10 +219,26 @@ button{
     button{
         margin: 0 0.3em ;
     }
+    .log-in{
+        margin: 0 ;
+    }
+    .join{
+        display: none;
+    }
+    .container-header{
+        flex-direction: row-reverse;
+    }
+    
+
 }
 
 
 /* main */
+
+main{
+    position: relative;
+    top: 100px;
+}
 
 .pic-description{
     margin: 2em 0;
@@ -248,6 +303,8 @@ button{
 /* footer */
 footer{
     padding: 3em 0;
+    position: relative;
+    top: 100px;
 }
 .footer-bg{
     background-color: #303030;

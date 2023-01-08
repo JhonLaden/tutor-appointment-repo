@@ -1,46 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel = "stylesheet" href = "../css/reusable.css">
-    <link rel = "stylesheet" href = "../css/style.css">
-
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <div class="container container-flex">
-            <div class="logo-quote container-flex">
-                <img class = "logo" src="../images/logo.jpg" alt="">
-                <div class="quote h-text">Best tutor in town</div>
-            </div>
-
-            <div class="nav-sign">
-                <div class = "icon icon-button" >
-                    <i class='bx bx-menu'></i>
-                </div>
-                <ul class = "navbar h-text " >
-                    <li class = "nav-item"><a class = "nav-link active" href="#">HOME</a></li>
-                    <li class = "nav-item"><a class = "nav-link" href="#">FEATURES</a></li>
-                    <li class = "nav-item"><a class = "nav-link" href="#">TUTORS</a></li>
-                    <li class = "nav-item"><a class = "nav-link" href="#">ABOUT US</a></li>
-                    <li class = "nav-item"><a class = "nav-link" href="#">FAQs</a></li>
-
-                    <button class= "log-in">Login</button>
-                    <button class= "sign-up">Sign up</button>
-                </ul>
-             
-
-            </div>
-
-        </div>
-        
-    </header>
+<?php
+    require_once "../variables/nav.php";
+    $home = "active";
+    require_once "../includes/header.php";
+?>
     <main>
-        <div class="wall wall-bg">
+        <div class="wall wall-bg-home">
             <div class="container container-wall fluid-height">
                 <div class="wall-body container-wall">
                         <div class="wall-title">Tutor Appointment</div>
@@ -49,6 +13,8 @@
                 <img src="../images/wall.png" alt="wall">
             </div>
         </div>
+
+    
 
 
         <div class="container">
@@ -118,67 +84,6 @@
         
     </main>
 
-    <footer class = "footer-bg">
-        <div class="info container">
-            <div class="logo-company">
-                <h1 class="footer-logo">LOGO</h1>
-                <p>Locusta Inc.</p>
-            </div>
-
-            <div class="about-contact">
-                <div class="about">
-                    <h2 class = "footer-title">About Us</h2>
-                    <p>
-                        Sample goal of our Website to our customer
-                    </p>
-                </div>
-               
-                <div class="contact">
-                    <h2 class = "footer-title">Contact us</h2>
-                    <ul>
-                        <li>09352006776</li>
-                        <li>jhonladen667@yahoo.com</li>
-                    </ul>
-                </div>
-            </div>
-           
-            <div class="information">
-                <h2 class = "footer-title">Information</h2>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">More Search</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-            </div>
-
-            <div class="helpful-links">
-                <h2 class="footer-title">Helpful Links</h2>
-                <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Supports</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-           
-        </div>
-
-        <div class="platforms">
-            <div class="platforms-logo">
-                <ul>
-                    <li><a href="#"><i class='bx bxl-facebook-square footer-icon'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-instagram-alt footer-icon' ></i></a></li>
-                    <li><a href="#"><i class='bx bxl-twitter footer-icon' ></i></a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>2018 <i class='bx bx-copyright' ></i> company.Ltd. All Right reserved </p>
-            </div>
-        </div>
-    </footer>
-
-    <script src = "../js/script.js" > </script>
-</body>
-</html>
+<?php
+    require_once "../includes/footer.php";
+?>
