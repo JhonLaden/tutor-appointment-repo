@@ -1,4 +1,4 @@
-<footer class = "footer-bg">
+<footer class = "footer-bg" id = "about">
         <div class="info container">
             <div class="logo-company">
                 <h1 class="footer-logo">LOGO</h1>

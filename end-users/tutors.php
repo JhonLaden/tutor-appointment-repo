@@ -13,6 +13,77 @@
        
         </div>
     </div>
+
+    <div class="card-container container">
+        <button id = "smooth-btn" class = "prev-btn" >Prev</button>
+
+        <ul class="list-container" id = "scrollable-element">
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#">
+                    <img class = "card-img" src="../images/icons/english.png" alt="english">
+                    <div class="card-title">English</div>
+                </a>
+            </li>
+        </ul>
+        <button id = "#smooth-btn" class = "next-btn" >Next</button>
+
+
+    </div>
+    
     
 </main>
 <?php

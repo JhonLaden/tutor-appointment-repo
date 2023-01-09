@@ -12,7 +12,7 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <header id = "head">
         <div class="container container-header">
             <div class="nav-sign">
                 <input type="checkbox" id = "check" >
@@ -23,7 +23,7 @@
                     <li class = "nav-item"><a class = "nav-link <?php echo $home; ?>" href="../end-users/home.php">HOME</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $features; ?>" href="#">FEATURES</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $tutors; ?>" href="../end-users/tutors.php">TUTORS</a></li>
-                    <li class = "nav-item"><a class = "nav-link <?php echo $about; ?>" href="#">ABOUT US</a></li>
+                    <li  id = "about-link" class = "nav-item" ><a  class = "nav-link <?php echo $about; ?>" href="#">ABOUT US</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="#">FAQs</a></li>
 
                     <button class= "log-in">Login</button>

@@ -73,8 +73,9 @@ header{
     position: fixed;
     width: 100%;
     background-color: #fff;
-    transition: all ease var(--trans-01);
+    transition: background-color 0.5s;
     z-index: 1;
+    
 }
 
 .container-header{
@@ -363,3 +364,51 @@ footer h2{
     }
 
 }
+
+
+/* card container */
+
+.card-container{
+    display: flex;
+    align-items: center;
+}
+
+.list-container{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: fit-content;
+    background-color: green;
+    justify-content: space-between;
+}
+
+.card-container .list-container .card a{
+    display: flex;
+    width: 144px;
+    height: 150px;
+    margin: 0 6px;
+    border: 1px solid black;
+}
+
+.card .card-img{
+    height: 10px;
+}
+
+.next-btn{
+    margin-left: 1em;
+}
+.prev-btn{
+    margin-right: 1em;
+}
+
+/* scroll */
+#scrollable-element::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  #scrollable-element::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #F5F5F5;
+}
+
+
