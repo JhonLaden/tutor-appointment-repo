@@ -12,7 +12,7 @@
     <title>Home</title>
 </head>
 <body>
-    <header id = "head">
+    <header id = "head" class = "bg-blue">
         <div class="container container-header">
             <div class="nav-sign">
                 <input type="checkbox" id = "check" >
@@ -34,7 +34,7 @@
             </div>
 
             <div class="logo-quote container-flex">
-                <img class = "logo" src="../images/logo.jpg" alt="">
+                <img class = "logo" src="../images/logo.png" alt="">
                 <div class="quote h-text">Best tutor in town</div>
             </div>
 

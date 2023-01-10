@@ -7,7 +7,7 @@
         <div class="wall wall-bg-home">
             <div class="container container-wall fluid-height">
                 <div class="wall-body container-wall">
-                        <div class="wall-title">Tutor Appointment</div>
+                        <p class="wall-title">Tutor Appointment</p>
                         <h1 class="wall-sub-title">Tutoring Services at its best</h1>
                 </div>
                 <img src="../images/wall.png" alt="wall">
