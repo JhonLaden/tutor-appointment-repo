@@ -7,6 +7,7 @@
     --secondary-color: #c48af9;
     --blue-berry: #2d3b41;
     --sea: #1da5ff;
+    --font-color: #62646a;
     
    
     --trans-05: all 0.5s ease;
@@ -71,3 +72,6 @@ button{
     font-size: 1.5rem;
 }
 
+.t-color{
+    color: var(--font-color);
+}

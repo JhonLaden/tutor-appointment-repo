@@ -414,6 +414,7 @@ footer h2{
 
 }
 
+/**** TUTORS PAGE *****/
 
 /* card container */
 
@@ -430,7 +431,7 @@ footer h2{
     height: 200px;
 }
 
-.card-container .list-container .card a{
+.card-link{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -441,6 +442,12 @@ footer h2{
     height: 150px;
     padding: 1em;
     margin: 5px;
+    box-shadow: 0em 0.1em 0.2em gray;
+    transition: box-shadow 0.3s;
+}
+
+.card-link:hover{
+    box-shadow: 0em 0.5em .8em gray;
 }
 
 .card-container .list-container .card .card-title{
@@ -479,4 +486,65 @@ footer h2{
   background-color: #F5F5F5;
 }
 
+/* search and sort */
 
+.search-sort{
+    font-size: 1rem;
+    color: var(--font-color);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.search-sort .search{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    margin-right: 0.8em;
+}
+
+.search .search-label{
+    margin-right: 1em;
+}
+
+.search input{
+    min-width: 150px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--font-color);
+
+}
+
+.sort select{
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+
+}
+
+@media (min-width: 450px) {
+    .search-sort{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-sort .search{
+        width: 45%;
+        margin: 0 0;
+    }
+    
+}
+
+@media (min-width: 700px) {
+    .search-sort{
+        font-size: 1.3rem;
+    }
+   
+    
+}
+
+/* total services */
+.total-services{
+    margin-bottom: 2em;
+}
