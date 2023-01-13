@@ -4,7 +4,7 @@ const scrollableEl = document.getElementById('scrollable-element');
 const cards = document.getElementsByClassName('card');
 
 nextBtn.addEventListener('click', function(){
-    scrollableEl.scrollLeft += 320;
+    scrollableEl.scrollLeft += scrollableEl.offsetWidth;
 
     scrollableEl.addEventListener('scroll', function() {
         let newScroll = scrollableEl.scrollLeft;
@@ -13,7 +13,7 @@ nextBtn.addEventListener('click', function(){
 });
 
 prevBtn.addEventListener('click', function(){
-    scrollableEl.scrollLeft -= 320;
+    scrollableEl.scrollLeft -= scrollableEl.offsetWidth;
 
     scrollableEl.addEventListener('scroll', function() {
         let newScroll = scrollableEl.scrollLeft;
@@ -21,7 +21,6 @@ prevBtn.addEventListener('click', function(){
 });
 
 var lastScrollPos = 0;
-var lastScrollHeight = 642.8571166992188;
 // check scroll function is for scrollable effect to check 
 // if the scroll is on the first.
 // if yes, add disabled btn to the icon so that user cant click it

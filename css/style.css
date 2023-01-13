@@ -455,8 +455,8 @@ footer h2{
 }
 
 .card .card-img{
-    height: 100px;
-    width: 100px;
+    height: 80%;
+    width: 80%;
     max-width: 100%;
 }
 
@@ -547,4 +547,62 @@ footer h2{
 /* total services */
 .total-services{
     margin-bottom: 2em;
+}
+
+/* tutors grid */
+.grid-container{
+    display: grid;
+    padding: 2em 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 1em;
+}
+
+.img-preview{
+    height: 35%;
+}
+
+.information{
+    height: 65%;
+    padding: 1em;
+
+}
+
+.grid-item .profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0.3em 0;
+}
+
+.grid-item{
+    background-color: green;
+}
+
+.profile .profile-type{
+    color: var(--font-color);
+    font-size: 0.7rem;
+}
+.grid-item i.bxs-star{
+    font-size: 1rem;
+    color: var(--gold);
+}
+.grid-item .rating{
+    display: flex;
+}
+
+
+/* grid img */
+
+
+.wall-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile-img{   
+    height: 1.8rem;
+    max-height: 100%;
+    border-radius: 50%;
 }

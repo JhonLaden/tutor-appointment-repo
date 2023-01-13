@@ -105,9 +105,191 @@
 
     <div class="container total-services">
         <p class=" t-color">63,449 services available</p>
-
     </div>
     
+    <div class="container grid-container">
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+       
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/icons/science.png" alt="wall1">
+
+            </div>
+
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="profile-name-type">
+                        <div class="profile-name">Julia Barbero</div>
+                        <div class="profile-type">Tutor</div>
+                    </div>
+                </div>
+                <p class="details">
+                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
+                    and teaching online would be my source of income for this year.
+
+                </p>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                </div>
+                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+            </div>
+        </div>
+        
+        
+    </div>
+
     
     <script src = "../js/tutors.js" > </script>
     
