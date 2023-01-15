@@ -111,26 +111,30 @@
         <div class="grid-item">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
-
             </div>
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
-
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <div class="detail-pay-rate-wrapper">
+                    <p class="details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum architecto aliquam sequi nemo corrupti consequatur exercitationem totam soluta delectus id.</p>
+                    <div class="rating-pay-rate">
+                        <div class="pay-rate">
+                        <p>Pay rate at </p>
+                        <h2>₱ 200.00</h2>
+                    </div>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
             </div>
         </div>
        
@@ -143,156 +147,217 @@
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
+                <div class="detail-pay-rate-wrapper">
 
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <p class="details">I have been teaching students for more than 2 years and to teach unfortunate children voluntarily and teaching online would be my source of income for this year.</p>
+                <div class="rating-pay-rate">
+                    <div class="pay-rate">
+                        <p>Pay rate at </p>
+                        <h2>₱ 200.00</h2>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
+                </div>
             </div>
         </div>
 
         <div class="grid-item">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
-
             </div>
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
-
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <div class="detail-pay-rate-wrapper">
+                <p class="details">Lorem, ipsum dolor sit amet sfs adipisicing elit. Deserunt, repellat unde doloribus esse rem at excepturi ducimus necessitatibus quaerat mollitia velit repellendus? Alias, repellendus et sunt quae sint, nihil natus quos blanditiis illo corrupti perferendis est atque, commodi officiis id voluptatibus aperiam fugiat quas nulla vitae deleniti perspiciatis aliquid veritatis. Earum quisquam rerum ipsum enim saepe quos velit nobis consequuntur harum minima autem assumenda delectus itaque perferendis rem quia, doloremque odit maiores dicta maxime sunt facilis? Enim quasi vitae aliquam, id, alias soluta dolore harum accusantium molestiae cupiditate quidem officia necessitatibus amet consequuntur eaque deserunt hic voluptatem? Est, architecto esse.</p>
+                    <div class="rating-pay-rate">
+                       
+                            <div class="pay-rate">
+                            <p>Pay rate at </p>
+                            <h2>₱ 200.00</h2>
+                        </div>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
             </div>
         </div>
         <div class="grid-item">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
-
             </div>
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
-
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <div class="detail-pay-rate-wrapper">
+                <p class="details">Lorem ipsum dolor sit amet, sf adipisicing elit. Sed deserunt, sapiente aspernatur ducimus eos atque optio perspiciatis eaque expedita error, eum alias consequuntur accusantium incidunt ab facere. Ullam libero qui voluptates omnis nam corporis quam commodi nostrum, deserunt cum unde labore et eaque, aut vitae saepe nisi eligendi ad aliquam illum quod? Tempore, numquam quia repudiandae exercitationem non libero, temporibus ex optio corrupti adipisci ipsum repellendus, voluptas saepe est magni hic quos praesentium maxime rerum unde. Delectus, architecto doloribus neque cumque ratione quidem, ullam nulla placeat repudiandae minus, veniam porro dolorem esse ex reiciendis dolorum nisi officia magni iure. Harum quaerat mollitia impedit cum quia quam earum ipsa rerum commodi? Praesentium cumque hic rerum veritatis quis, sint natus temporibus saepe!.</p>
+                    <div class="rating-pay-rate">
+                       
+                            <div class="pay-rate">
+                            <p>Pay rate at </p>
+                            <h2>₱ 200.00</h2>
+                        </div>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
             </div>
         </div>
         <div class="grid-item">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
-
             </div>
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
-
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <div class="detail-pay-rate-wrapper">
+                <p class="details">Lorem ipsum, dolor sit amet sf adipisicing elit. Molestiae quae maxime deserunt vitae dolorem numquam mollitia? Adipisci quo debitis nihil minus! Laboriosam doloribus, qui sed repudiandae tempora explicabo iste amet vel! Quibusdam consequuntur, autem officiis quasi rerum laboriosam recusandae deleniti vel perspiciatis hic quod adipisci? Fugit accusamus quae sit ad nesciunt explicabo earum, dolore sunt tenetur itaque consequatur nam odio quas id nostrum deserunt maxime necessitatibus molestias? Quia, porro delectus enim optio rem rerum, iste eveniet itaque doloribus ex molestiae in nemo odio provident tempora aspernatur officia nostrum vitae quis neque, voluptas obcaecati! Quam qui soluta fuga. Perferendis est quam dolores voluptatum expedita, provident ullam laboriosam optio modi quis aperiam voluptatem, pariatur, aspernatur laborum numquam a possimus qui itaque cumque assumenda obcaecati dolore. Officia ut aut ad sint error dolore ratione similique deleniti? Praesentium similique neque debitis, at amet exercitationem eos omnis expedita aliquid voluptate nemo itaque adipisci autem enim necessitatibus ad asperiores obcaecati dicta nobis sapiente! Aut animi fugit quasi alias sunt, iure repellendus doloribus sint itaque a nostrum sequi eveniet quisquam explicabo sed! A vero ratione repudiandae dolorem quasi. Impedit suscipit illo, quasi autem sunt eius blanditiis quam?.</p>
+                    <div class="rating-pay-rate">
+                       
+                            <div class="pay-rate">
+                            <p>Pay rate at </p>
+                            <h2>₱ 200.00</h2>
+                        </div>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
             </div>
         </div>
         <div class="grid-item">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
-
             </div>
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
-
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <div class="detail-pay-rate-wrapper">
+                <p class="details">Lorem ipsum dolor sit amet sf, adipisicing elit. Voluptas facere animi eligendi. Dolores modi voluptatem, in, quod facilis quae dolor nisi assumenda ea eligendi eius iure atque sunt, deserunt quis nesciunt expedita culpa ipsa nam ab autem aliquid minus? Doloribus accusantium fugit iste optio facere et aspernatur provident aut sapiente distinctio impedit ipsam similique atque quas magnam quis ullam iusto, architecto itaque unde repellat. Explicabo consequuntur aliquam, commodi culpa error possimus porro saepe pariatur quod corrupti tempore iste debitis modi ipsam, aliquid soluta, mollitia ut nesciunt incidunt! Voluptatem, corrupti rerum..</p>
+                    <div class="rating-pay-rate">
+                       
+                            <div class="pay-rate">
+                            <p>Pay rate at </p>
+                            <h2>₱ 200.00</h2>
+                        </div>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
             </div>
         </div>
         <div class="grid-item">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
-
             </div>
             <div class="information">
                 <div class="profile">
                     <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
-                    <div class="profile-name-type">
-                        <div class="profile-name">Julia Barbero</div>
-                        <div class="profile-type">Tutor</div>
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
                     </div>
                 </div>
-                <p class="details">
-                    I have been teaching students for more than 2 years and to teach unfortunate children voluntarily
-                    and teaching online would be my source of income for this year.
-
-                </p>
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                <div class="detail-pay-rate-wrapper">
+                <p class="details">Lorem ipsum dolor, sit amet sf adipisicing elit. Maxime suscipit nisi beatae? Voluptates suscipit esse sf cum, itaque iusto ratione possimus, delectus ad architecto ex necessitatibus ipsa. Nulla fugit, libero, corporis ad corrupti similique veritatis voluptatum mollitia, distinctio voluptatibus unde ipsa earum exercitationem architecto! Tempora fugiat debitis corporis esse enim error quod velit fugit. Inventore blanditiis reiciendis aliquid earum amet porro nisi nulla quos, rem harum obcaecati delectus voluptatem velit deleniti, tempora fuga voluptate doloribus aspernatur repellat veritatis quasi nobis..</p>
+                    <div class="rating-pay-rate">
+                       
+                            <div class="pay-rate">
+                            <p>Pay rate at </p>
+                            <h2>₱ 200.00</h2>
+                        </div>
+                    </div>
                 </div>
-                <p class="pay-rate">Payrate at <h2>₱ <span class = "pay-rate-value">200.00</span></h2></p>
             </div>
         </div>
+        <div class="grid-item">
+            <div class="img-preview">
+                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+            </div>
+            <div class="information">
+                <div class="profile">
+                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <div class="flex-between">
+                        <div class="profile-name-type">
+                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-type">Tutor</div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-pay-rate-wrapper">
+                <p class="details">Lorem ipsum dolor sit amet break adipisicing elit. Quam adipisci facere sapiente similique eius optio, excepturi consequatur distinctio vitae molestiae voluptates placeat laudantium! Facilis et, aspernatur voluptate id delectus soluta tenetur optio ducimus qui ea accusamus non dolores sapiente, cupiditate voluptatem saepe blanditiis numquam deserunt in tempore! Placeat, ducimus neque. Expedita commodi quis ipsam voluptatem ex modi adipisci iure iusto quibusdam, assumenda veritatis sequi iste accusamus optio nisi? Accusantium cupiditate laudantium odit iusto eaque dolore voluptas harum fuga quas laboriosam doloribus molestias atque, corporis placeat earum error vitae et vero, minus perspiciatis perferendis id sit voluptatum ipsum. Quasi, perferendis consequatur!.</p>
+                    <div class="rating-pay-rate">
+                       
+                            <div class="pay-rate">
+                            <p>Pay rate at </p>
+                            <h2>₱ 200.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
         
         
     </div>
 
     
     <script src = "../js/tutors.js" > </script>
-    
+    <script src = "../js/limiter.js"> </script>
 </main>
 <?php
     require_once "../includes/footer.php";

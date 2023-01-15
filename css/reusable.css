@@ -75,3 +75,9 @@ button{
 .t-color{
     color: var(--font-color);
 }
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

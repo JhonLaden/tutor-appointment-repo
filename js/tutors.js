@@ -38,7 +38,6 @@ function checkScroll(newScroll){
 
         }
         lastScrollPos = newScroll;
-        console.log(scrollableEl.scrollLeft);
     }else if(Math.floor(scrollableEl.scrollLeft + scrollableEl.offsetWidth)+1 >= scrollableEl.scrollWidth){
         if(!nextBtn.classList.contains('disabled-btn')){
             nextBtn.classList.add('disabled-btn');
