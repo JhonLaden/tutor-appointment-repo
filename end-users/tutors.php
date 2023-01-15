@@ -357,9 +357,24 @@
     </div>
 
     <div class="container ">
-        <div class="pagination">
-            
-        </div>
+        <ul class="pagination">
+            <li class="pagination-item pagination-btn-left"><a href="#" class="pagination-link"><i class='bx bx-chevron-left'></i></a></li>
+            <div class="pagination-pages">
+                <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">6</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">7</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">8</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">9</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
+            </div>
+         
+            <li class="pagination-item pagination-btn-right"><a href="#" class="pagination-link"><i class='bx bx-chevron-right'></i></a></li>
+
+        </ul>
     </div>
 
     

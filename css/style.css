@@ -659,3 +659,21 @@ footer h2{
     max-height: 100%;
     border-radius: 50%;
 }
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+.pagination-item{
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0 0.5em;
+}
+.pagination-pages{
+    display: flex;
+    overflow: hidden;
+}
