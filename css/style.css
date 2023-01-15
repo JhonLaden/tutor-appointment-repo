@@ -559,14 +559,22 @@ footer h2{
     padding: 2em 0;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 1fr;
-    grid-gap: 1em;
+    grid-gap: 2em;
     
 }
 
 .grid-item{
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
     box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0em 0.1em 0.2em rgba(0,0,0,0.2);
+    transition: box-shadow 0.2s;
     overflow: hidden;
+}
+
+.grid-item:hover{
+    box-shadow: 0em 0.5em 1em rgba(0,0,0,0.2);
 }
 
 .detail-pay-rate-wrapper {
@@ -586,23 +594,19 @@ footer h2{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 0em 1em;
+    padding: 0 0.5em 0.5em 0.5em;
 }
 
 .grid-item .profile{
     display: flex;
     align-items: center;
     gap: 0.5em;
-    margin: 0.3em 0;
-}
-
-.grid-item{
-    display: flex;
-    flex-direction: column;
+    margin: 0.5em;
 }
 
 .grid-item .information .details{
     font-size: 0.9rem;
+    margin-bottom: 2em;
 }
 
 .profile .profile-type{
@@ -637,11 +641,7 @@ footer h2{
     .grid-item .information .details{
         font-size: 1rem;
     }
-    .grid-item{
-        border-radius: 5px;
-        box-shadow: none;
-        overflow: hidden;
-    }
+    
 }
 
 

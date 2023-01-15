@@ -103,21 +103,19 @@
         <button id = "#smooth-btn" class = "next-btn" ><i class='bx bx-chevron-right' ></i></button>
     </div>
 
-    <div class="container total-services">
-        <p class=" t-color">63,449 services available</p>
-    </div>
+    <p class="container t-color">63,449 services available</p>
     
     <div class="container grid-container">
-        <div class="grid-item">
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall1.png" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile1.jpeg" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">stylishwebs</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
@@ -136,20 +134,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
        
-        <div class="grid-item">
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/icons/science.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall2.png" alt="wall1">
 
             </div>
 
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile2.jpg" alt="profile2" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">aminul_islam33</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
@@ -169,23 +167,23 @@
                 </div>
                 </div>
             </div>
-        </div>
+        </a>
 
-        <div class="grid-item">
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall3.jpg" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile3.jpeg" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">abdulsattar550</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
-                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">15</span>)</p>
                         </div>
                     </div>
                 </div>
@@ -200,22 +198,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
+        </a>
+
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall4.png" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile4.jpg" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">meesumzaidi888</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
-                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">20</span>)</p>
                         </div>
                     </div>
                 </div>
@@ -230,22 +229,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
+        </a>
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall5.png" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile5.png" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">jjvera26</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
-                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">16</span>)</p>
                         </div>
                     </div>
                 </div>
@@ -260,22 +259,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
+        </a>
+
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall6.png" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile6.jpg" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">vastical6</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
-                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">11</span>)</p>
                         </div>
                     </div>
                 </div>
@@ -290,22 +290,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
+        </a>
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall7.png" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile7.jpg" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">alexanderivanov</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
-                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">50</span>)</p>
                         </div>
                     </div>
                 </div>
@@ -320,22 +320,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item">
+        </a>
+        <a class="grid-item" href = "#">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall-1.png" alt="wall1">
+                <img class = "wall-img" src="../images/grid/wall/wall8.jpg" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile-1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/grid/profile/profile8.jpeg" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">Julia Barbero</div>
+                            <div class="profile-name">adedokun_habeeb</div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
-                            <p class="rating-quantity">(<span class = "rating-quantity-value">18</span>)</p>
+                            <p class="rating-quantity">(<span class = "rating-quantity-value">34</span>)</p>
                         </div>
                     </div>
                 </div>
@@ -350,9 +350,16 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </a>  
         
         
+        
+    </div>
+
+    <div class="container ">
+        <div class="pagination">
+            
+        </div>
     </div>
 
     
