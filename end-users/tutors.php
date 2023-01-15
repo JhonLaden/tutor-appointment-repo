@@ -193,7 +193,7 @@
                        
                             <div class="pay-rate">
                             <p>Pay rate at </p>
-                            <h2>₱ 200.00</h2>
+                            <h2>₱ 150.00</h2>
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                        
                             <div class="pay-rate">
                             <p>Pay rate at </p>
-                            <h2>₱ 200.00</h2>
+                            <h2>₱ 300.00</h2>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                        
                             <div class="pay-rate">
                             <p>Pay rate at </p>
-                            <h2>₱ 200.00</h2>
+                            <h2>₱ 110.00</h2>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                        
                             <div class="pay-rate">
                             <p>Pay rate at </p>
-                            <h2>₱ 200.00</h2>
+                            <h2>₱ 150.00</h2>
                         </div>
                     </div>
                 </div>
@@ -345,7 +345,7 @@
                        
                             <div class="pay-rate">
                             <p>Pay rate at </p>
-                            <h2>₱ 200.00</h2>
+                            <h2>₱ 190.00</h2>
                         </div>
                     </div>
                 </div>
