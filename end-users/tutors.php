@@ -377,6 +377,59 @@
         </ul>
     </div>
 
+    <form class="form-login">
+        <div class="container">
+            <div class="login-title">Join Locusta</div>
+            <div class="form-header">
+                <h1 class="sign-up"></h1>
+                <h3></h3>
+            </div>
+            <div class="login-body" id="scrollable-element">
+
+                <div class="form-type">
+                    <input type="radio" id="tutor" name="tutor" value="tutor">
+                    <label for="tutor">Tutor</label>
+                    <input type="radio" id="learner" name="learner" value="learner">
+                    <label for="learner">Learner</label>
+                </div>
+
+                <div class="form-tutor">
+                    <div class="form-tutor-title"></div>
+                    <div class="slider-options">
+                        <h2 class="account"></h2>
+                        <h2 class="personal-info"></h2>
+                    </div>
+                    <p class="enter-details"></p>
+                    <div class="input-container-account">
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="fname" placeholder = "First Name">
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lname" placeholder = "Last Name">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder = "Email">
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" placeholder = "Password">
+                        <label for="password-confirm"></label>
+                        <input type="password" id="password-confirm" name="password-confirm" placeholder = "Confirm Password">
+                        <label for="number"></label>
+                        <input type="number" id="number" name="number" placeholder = "Contact Number">
+                    </div>
+                    <div class="input-container-personal-info">
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="login-btns">
+                    <button class="login-back-btn">Back</button>
+                    <button class="login-next-btn">Next</button>
+                </div>
+                
+            </div>
+        </div>
+    </form> 
+
     
     <script src = "../js/tutors.js" > </script>
     <script src = "../js/limiter.js"> </script>

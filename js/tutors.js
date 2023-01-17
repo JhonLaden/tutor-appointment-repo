@@ -44,3 +44,7 @@ function checkScroll(newScroll){
         }
     }
 }
+
+// const img = document.getElementsByClassName('img-preview')[0];
+// console.log(img.clientHeight, img.style.width);
+
