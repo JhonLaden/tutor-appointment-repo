@@ -7,6 +7,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel = "stylesheet" href = "../css/reusable.css">
     <link rel = "stylesheet" href = "../css/style.css">
+    <link rel = "stylesheet" href = "../css/login-form.css">
+
 
     
     <title>Home</title>

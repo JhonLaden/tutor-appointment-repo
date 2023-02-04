@@ -2,6 +2,8 @@
     require_once "../variables/nav.php";
     $tutors = "active";
     require_once "../includes/header.php";
+    require_once "../includes/login.php";
+
 ?>
 <main>
     <div class="wall wall-bg-home">
@@ -35,7 +37,7 @@
     
         <button id = "smooth-btn" class = "prev-btn disabled-btn" ><i class='bx bx-chevron-left'></i></button>
 
-        <ul class="list-container" id = "scrollable-element">
+        <ul class="list-container" id = "scrollable-element-subjects">
             <li class="card">
                 <a href="#"class = "card-link">
                     <img class = "card-img" src="../images/icons/english.png" alt="english">
@@ -383,6 +385,7 @@
     <script src = "../js/tutors.js" > </script>
     <script src = "../js/limiter.js"> </script>
 </main>
+
 <?php
     require_once "../includes/footer.php";
 ?>

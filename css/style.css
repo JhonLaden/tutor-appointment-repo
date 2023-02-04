@@ -479,13 +479,13 @@ footer h2{
 }
 
 /* scroll */
-#scrollable-element{
+#scrollable-element-subjects{
     scroll-behavior: smooth;
 }
-#scrollable-element::-webkit-scrollbar-thumb {
+#scrollable-element-subjects::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
-  #scrollable-element::-webkit-scrollbar {
+  #scrollable-element-subjects::-webkit-scrollbar {
   width: 0.5em;
   background-color: #F5F5F5;
 }
@@ -665,9 +665,6 @@ footer h2{
     }
     
 }
-
-
-
 
 .pagination{
     display: flex;
