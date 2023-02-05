@@ -2,6 +2,7 @@
 
 .form-login{
     background-color: #fff;
+    border-radius: 5px;
     position: fixed;
     z-index: 1;
     height: 100vh;
@@ -11,6 +12,7 @@
     padding: 1em;
     display: none;
 }
+
 
 .form-login .login-container{
     height: 100%;

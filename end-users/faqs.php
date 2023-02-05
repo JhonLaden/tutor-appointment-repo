@@ -1,6 +1,6 @@
 <?php
     require_once "../variables/nav.php";
-    $home = "active";
+    $faqs = "active";
     require_once "../includes/header.php";
     require_once "../includes/login.php";
 

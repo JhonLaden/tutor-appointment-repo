@@ -247,7 +247,6 @@ button{
     cursor: pointer;
 }
 
-
 @media (min-width: 850px){
     .nav-sign{
         flex-direction: row;
@@ -327,11 +326,13 @@ main{
         justify-content: space-around;
     }
 
+
     .pic-description img{
         width: 45%;
  
     }
     .pic-description .description{
+        text-align: start;
         width: 40%;
     }
     .reversed{

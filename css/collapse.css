@@ -1,7 +1,7 @@
 .collapsible{
     min-width: 400px;
     overflow: hidden;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .collapsible input{
@@ -10,7 +10,7 @@
 
 .collapsible label{
     position: relative;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #fff;
     box-shadow: 0 5px 10px gray;
     color: var(--h-text);
