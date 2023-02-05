@@ -8,6 +8,8 @@
     <link rel = "stylesheet" href = "../css/reusable.css">
     <link rel = "stylesheet" href = "../css/style.css">
     <link rel = "stylesheet" href = "../css/login-form.css">
+    <link rel = "stylesheet" href = "../css/collapse.css">
+
 
 
     
@@ -40,8 +42,8 @@
                 <div class="quote h-text">Best tutor in town</div>
             </div>
 
-            <div class="join">
-                <a href = "#" class = "join-button" >Join</a>
+            <div class="join-btn">
+                <a href = "#" class = "join" >Join</a>
             </div>
 
             

@@ -263,7 +263,10 @@ button{
         z-index: 0;
         position: relative;
     }
-    .icon{
+    header .icon{
+        display: none;
+    }
+    .join-btn{
         display: none;
     }
     button{
@@ -272,9 +275,7 @@ button{
     .log-in{
         margin: 0 ;
     }
-    .join{
-        display: none;
-    }
+
     .container-header{
         flex-direction: row-reverse;
     }
@@ -287,6 +288,7 @@ button{
 
 main{
     position: relative;
+    z-index: 0;
     top: 100px;
 }
 

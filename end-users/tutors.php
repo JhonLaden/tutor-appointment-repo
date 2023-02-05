@@ -5,7 +5,7 @@
     require_once "../includes/login.php";
 
 ?>
-<main>
+<main >
     <div class="wall wall-bg-home">
         <div class="container container-wall fluid-height">
             <div class="wall-body container-wall">

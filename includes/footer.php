@@ -64,7 +64,6 @@
     <script src = "../js/scroll.js"> </script>
     <script src = "../js/buttonScroll.js"> </script>
     <script src = "../js/radio.js"> </script>
-
-    
+    <script src = "../js/disabler.js"> </script>
 </body>
 </html>
