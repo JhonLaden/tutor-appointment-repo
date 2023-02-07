@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;500&display=swap');
 
 :root{
     --h-text: #3D5BFC;
@@ -22,7 +23,7 @@
     padding: 0;
     font-weight: 400;
     box-sizing: border-box;
-    font-family: 'roboto' ;
+    font-family: 'Assistant' ;
 
 }
 
