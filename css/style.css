@@ -313,10 +313,13 @@ main{
     font-size: 1rem;
 }
 
-.pic-description .title{
+.pic-description .title {
     color: #7387F1;
     margin-bottom: 1em;
+    text-align: center;
+    border-bottom: none;
 }
+
 
 
 @media (min-width: 810px){
@@ -325,8 +328,10 @@ main{
         align-items: center;
         justify-content: space-around;
     }
+    .pic-description .title {
+        border-bottom: 1px solid var(--h-text);
 
-
+    }
     .pic-description img{
         width: 45%;
  

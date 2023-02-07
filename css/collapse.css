@@ -39,6 +39,7 @@
     margin-bottom: 0.5em;
 }
 
+
 .collapsible input:checked ~ .collapsible-text{
     max-height: 300px;
     padding-bottom: 25px;
@@ -47,6 +48,11 @@
     opacity: 1;
     top: 0;
 }
+
+.collapsible input:checked ~ label{
+    box-shadow: none;
+}
+
 
 .collapsible-text h2{
     margin-bottom: 10px;
