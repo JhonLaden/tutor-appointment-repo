@@ -38,27 +38,46 @@
             <div class="form-type-radio">
                     <div class="radio-container">
                         <img src="../images/other/tutor.png" alt="">
-                        <input class = "tutor-radio" type="radio" id="tutor" name="type" value="tutor">
-                        <label class = "tutor-label"for="tutor">Tutor</label>
+                        <input class = "tutor-radio type-radio" type="radio" id="tutor" name="type" value="tutor">
+                        <label class = "tutor-label type-label"for="tutor">Tutor</label>
                     </div>
 
                     <div class="radio-container">
                         <img src="../images/other/learner.png" alt="">
-                        <input class = "learner-radio" type="radio" id="learner" name="type" value="learner">
-                        <label class = "learner-label" for="learner">Learner</label>
+                        <input class = "learner-radio type-radio" type="radio" id="learner" name="type" value="learner">
+                        <label class = "learner-label type-label" for="learner">Learner</label>
                     </div>  
 
                     <div class="radio-container">
                         <img src="../images/other/guardian.png" alt="">
-                        <input class = "guardian-radio" type="radio" id="guardian" name="type" value="guardian">
-                        <label class = "guardian-label" for="guardian">Guardian</label>
+                        <input class = "guardian-radio type-radio" type="radio" id="guardian" name="type" value="guardian">
+                        <label class = "guardian-label type-label" for="guardian">Guardian</label>
                     </div>  
                 </div>
         </div>
         <div class="sign-in-btns">
-            <button class="button-prev">Back</div>
-            <button class="button-prev">Next</div>
+            <button class="prev-btn">Back</button>
+            <button class="next-btn" disabled>Next</button>
         </div>
     </div>
+
+    <form class = "tutor-form container" action="#">
+        <div class="tutor-header">
+            <img src="../images/other/tutor.png" alt="">
+            <h4 class="tutor-title">Sign up as tutor</h4>
+        </div>
+        <div class="tutor-form-preview">
+            <div class="tutor-account">
+                <label for="tutor-email" >Email</label>
+                <input type="email" name="tutor-email" id = "tutor-email" placeholder = "Enter your email">
+                <label for="tutor-username" >Username</label>
+                <input type="email" name="tutor-username" id = "tutor-username" placeholder = "Enter your username">
+                <label for="tutor-password" >Password</label>
+                <input type="password" name="tutor-password" id = "tutor-password" placeholder = "Enter your password">
+                <label for="tutor-confirm-password" >Confirm Password</label>
+                <input type="email" name="tutor-confirm-password" id = "tutor-confirm-password" placeholder = "Enter your password">
+            </div>
+        </div>
+    </form>
     <div class="img"></div>
 </div>

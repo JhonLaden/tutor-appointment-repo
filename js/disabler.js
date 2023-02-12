@@ -19,8 +19,8 @@ login.addEventListener('click', function(){
 
 
 
-xBtn.addEventListener('click', function(){
-    login.scrollIntoView();
-    console.log(login);
-    formLogin.style.display = "none";
-});
+// xBtn.addEventListener('click', function(){
+//     login.scrollIntoView();
+//     console.log(login);
+//     formLogin.style.display = "none";
+// });
