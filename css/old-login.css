@@ -1,0 +1,215 @@
+.form-login{
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left:0;
+    padding: 1em;
+    display: none;
+}
+
+
+
+.form-login .login-container{
+    height: 100%;
+}
+
+.form-login .login-body-item{
+    flex-shrink: 0;
+}
+
+.form-login .form-type{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login .form-type .form-type-input{
+    margin-bottom: 2em;
+}
+
+@keyframes from-left {
+    0%{
+        opacity: 0;
+        right: 5em;
+    }
+    100%{
+        opacity: 1;
+        right: 0em;
+    }
+}
+
+
+@keyframes from-right {
+    0%{
+        opacity: 0;
+        left: 5em;
+    }
+    100%{
+        opacity: 1;
+        left: 0em;
+    }
+}
+
+
+
+.form-login .form-type img{
+    max-height: 100%;
+    height: 40%;
+}
+
+.form-login .form-type .img-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login .form-type .img-p p{
+    text-align: center;
+
+}
+
+.form-login .form-type .form-p-tutor,
+.form-login .form-type .form-p-learner{
+    display: none;
+}
+
+.form-login .form-type .form-p-tutor{
+    position: relative;
+    animation: from-left;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.form-login .form-type .form-p-learner{
+    position: relative;
+    left: 2em;
+    animation: from-right;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.form-login .form-type .form-type-header{
+    margin-bottom: 1em;
+}
+
+.form-login .form-type input{
+    display: none;
+}
+
+.form-login .form-type label{
+    padding: 0.8em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+}
+
+.form-login .form-type input[type="radio"]:checked + label {
+    /* styles for the label */
+    background-color: var(--h-text);
+    color: #fff;
+    box-shadow: 0px 5px 10px gray;
+}
+
+
+.user-form{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-login .form-tutor,
+.form-login .form-learner{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.form-login .form-learner h3,
+.form-login .form-tutor h3{
+    text-align: center;
+}
+
+.form-login .form-learner .input-container-header,
+.form-login .form-tutor .input-container-header{
+    color: var(--h-text);
+}
+
+.form-login .form-learner input,
+.form-login .form-tutor input{
+   margin-bottom: 0.3em;
+   padding: 0.1em;
+   /* border-top: none;
+   border-left: none;
+   border-right: none; */
+}   
+
+
+.form-login .login-btns{
+    display: none;
+    justify-content: space-between;
+}
+
+.form-login .login-btns .submit-btn{
+    display: none;
+}
+
+.form-login .login-title{
+    text-align: center;
+}
+
+.form-login .login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-login .login .input-el{
+    margin: 0.5em 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-login .login .or{
+    text-align: center;
+}
+
+.form-login .login-body{
+    display: flex;
+    position: relative;
+    margin: 1em 0;
+    height: 70%;
+}
+
+
+#scrollable-element{
+    overflow-x:hidden   ;
+    scroll-behavior: smooth;
+    
+}
+
+.x-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+/* medias */
+@media (min-width: 390px){
+    .form-login{
+        width: 365px;
+        height: 90vh;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+    }
+}
+

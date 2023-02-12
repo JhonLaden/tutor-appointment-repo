@@ -316,8 +316,6 @@ main{
 .pic-description .title {
     color: #7387F1;
     margin-bottom: 1em;
-    text-align: center;
-    border-bottom: none;
 }
 
 
@@ -327,10 +325,6 @@ main{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-    }
-    .pic-description .title {
-        border-bottom: 1px solid var(--h-text);
-
     }
     .pic-description img{
         width: 45%;
