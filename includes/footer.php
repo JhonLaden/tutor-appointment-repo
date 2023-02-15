@@ -59,11 +59,13 @@
         </div>
     </footer>
 
-    <script src = "../js/script.js" > </script>
     <script src = "../js/home.js"> </script>
-    <script src = "../js/scroll.js"> </script>
     <script src = "../js/buttonScroll.js"> </script>
     <script src = "../js/radio.js"> </script>
-    <script src = "../js/disabler.js"> </script>
+    <script src = "../js/tutor-btns.js"> </script>
+    <script src = "../js/old-learner-btns.js"></script>
+    <script src = "../js/guardian-btns.js"></script>
+
+
 </body>
 </html>

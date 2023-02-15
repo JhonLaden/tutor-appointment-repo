@@ -14,7 +14,7 @@
 
             <p class="forgot-password">Forgot Password?</p>
 
-            <button class="login-submit">LOGIN</button>
+            <button type = "button" class="login-submit">LOGIN</button>
 
             <div class="lines">
                 <div class="line"></div>
@@ -24,7 +24,7 @@
 
             <p class="no-account">You don`t have an account? Sign Up as Tutor or Learner </p>
 
-            <button class="create-account">Create Account</button>
+            <button type = "button" class="create-account">Create Account</button>
         </div>
         
     </div>
@@ -56,18 +56,19 @@
                 </div>
         </div>
         <div class="sign-in-btns">
-            <button class="prev-btn">Back</button>
-            <button class="next-btn" disabled>Next</button>
+            <button type = "button" class="prev-btn">Back</button>
+            <button type = "button" class="next-btn" disabled>Next</button>
         </div>
     </div>
 
-    <form class = "tutor-form container" action="#">
+    <form class = "tutor-form container" action="../end-users/test.php" method = "POST">
         <div class="tutor-header">
             <img src="../images/other/tutor.png" alt="">
             <h4 class="tutor-title">Sign up as tutor</h4>
         </div>
         <div class="tutor-form-preview">
             <div class="tutor-account">
+                <h4 class = "tutor-form-preview-header">Account</h4>
                 <label for="tutor-email" >Email</label>
                 <input type="email" name="tutor-email" id = "tutor-email" placeholder = "Enter your email">
                 <label for="tutor-username" >Username</label>
@@ -75,9 +76,135 @@
                 <label for="tutor-password" >Password</label>
                 <input type="password" name="tutor-password" id = "tutor-password" placeholder = "Enter your password">
                 <label for="tutor-confirm-password" >Confirm Password</label>
-                <input type="email" name="tutor-confirm-password" id = "tutor-confirm-password" placeholder = "Enter your password">
+                <input type="password" name="tutor-confirm-password" id = "tutor-confirm-password" placeholder = "Enter your password">
+            </div>
+            <div class="tutor-personal-information">
+                <h4 class = "tutor-form-preview-header">Personal Information</h4>
+                <label for="tutor-fn" >First name</label>
+                <input type="text" name="tutor-fn" id = "tutor-fn" placeholder = "Enter your first name">
+                <label for="tutor-mn" >Middle name (optional)</label>
+                <input type="text" name="tutor-mn" id = "tutor-mn" placeholder = "Enter your middle name">
+                <label for="tutor-ln" >Last name</label>
+                <input type="text" name="tutor-ln" id = "tutor-ln" placeholder = "Enter your last name">
+                <label for="tutor-bd" >Birth date</label>
+                <input type="date" name="tutor-bd" id = "tutor-bd">
+                <label for="tutor-contact-number" >Contact number</label>
+                <input type="number" name="tutor-contact-number" id = "tutor-contact-number" placeholder = "Enter your contact number">
+                <label for="tutor-address" >Address</label>
+                <input type="text" name="tutor-address" id = "tutor-address" placeholder = "Enter your address">
+                <label for="tutor-subject" >Subject</label>
+                <input type="text" name="tutor-subject" id = "tutor-subject" placeholder = "subject">
+                <label for="tutor-age-range" >Prefered age range</label>
+                <input type="text" name="tutor-age-range" id = "tutor-age-range" placeholder = "Enter your prefered age range">
             </div>
         </div>
-    </form>
+        <div class="tutor-btns">
+            <button type = "button" class="prev-btn">Back</button>
+            <button type = "button" class="next-btn">Next</button>
+            <button type = "submit" class="submit-btn">Submit</button>
+        </div>
+    </form> 
+
+    <form class = "learner-form container" action="../end-users/test.php" method = "POST">
+        <div class="learner-header">
+            <img src="../images/other/learner.png" alt="">
+            <h4 class="learner-title">Sign up as learner</h4>
+        </div>
+        <div class="learner-form-preview">
+            <div class="learner-account">
+                <h4 class = "learner-form-preview-header">Account</h4>
+                <label for="learner-email" >Email</label>
+                <input type="email" name="learner-email" id = "learner-email" placeholder = "Enter your email">
+                <label for="learner-username" >Username</label>
+                <input type="email" name="learner-username" id = "learner-username" placeholder = "Enter your username">
+                <label for="learner-password" >Password</label>
+                <input type="password" name="learner-password" id = "learner-password" placeholder = "Enter your password">
+                <label for="learner-confirm-password" >Confirm Password</label>
+                <input type="password" name="learner-confirm-password" id = "learner-confirm-password" placeholder = "Enter your password">
+            </div>
+            <div class="learner-personal-information">
+                <h4 class = "learner-form-preview-header">Personal Information</h4>
+                <label for="learner-fn" >First name</label>
+                <input type="text" name="learner-fn" id = "learner-fn" placeholder = "Enter your first name">
+                <label for="learner-mn" >Middle name (optional)</label>
+                <input type="text" name="learner-mn" id = "learner-mn" placeholder = "Enter your middle name">
+                <label for="learner-ln" >Last name</label>
+                <input type="text" name="learner-ln" id = "learner-ln" placeholder = "Enter your last name">
+                <label for="learner-bd" >Birth date</label>
+                <input type="date" name="learner-bd" id = "learner-bd">
+                <label for="learner-contact-number" >Contact number</label>
+                <input type="number" name="learner-contact-number" id = "learner-contact-number" placeholder = "Enter your contact number">
+                <label for="learner-address" >Address</label>
+                <input type="text" name="learner-address" id = "learner-address" placeholder = "Enter your address">
+            </div>
+            <div class="learner-guardian">
+                <h4 class = "learner-guardian-header">Guardian(optional)</h4>
+                <label for="learner-guardian-fn" >First name</label>
+                <input type="text" name="learner-fn" id = "learner-guardian-fn" placeholder = "Enter your first name">
+                <label for="learner-guardian-mn" >Middle name (optional)</label>
+                <input type="text" name="learner-guardian-mn" id = "learner-guardian-mn" placeholder = "Enter your middle name">
+                <label for="learner-guardian-ln" >Last name</label>
+                <input type="text" name="learner-guardian-ln" id = "learner-guardian-ln" placeholder = "Enter your last name">
+                <label for="learner-guardian-bd" >Birth date</label>
+                <input type="date" name="learner-guardian-bd" id = "learner-guardian-bd">
+                <label for="learner-guardian-contact-number" >Contact number</label>
+                <input type="number" name="learner-guardian-contact-number" id = "learner-guardian-contact-number" placeholder = "Enter your contact number">
+                <label for="learner-guardian-sex">Sex</label>
+                <select name="learner-guardian-sex" id="sex">
+                    <option value="None">None</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <label for="learner-guardian-address" >Address</label>
+                <input type="text" name="learner-guardian-address" id = "learner-guardian-address" placeholder = "Enter your address">
+            </div>
+        </div>
+        <div class="learner-btns">
+            <button type = "button" class="prev-btn">Back</button>
+            <button type = "button" class="next-btn">Next</button>
+            <button type = "submit" class="submit-btn">Submit</button>
+        </div>
+    </form> 
+
+    <form class = "guardian-form container" action="../end-users/test.php" method = "POST">
+        <div class="guardian-header">
+            <img src="../images/other/guardian.png" alt="">
+            <h4 class="guardian-title">Sign up as Guardian</h4>
+        </div>
+        <div class="guardian-form-preview">
+            <div class="guardian-account">
+                <h4 class = "guardian-form-preview-header">Account</h4>
+                <label for="guardian-email" >Email</label>
+                <input type="email" name="guardian-email" id = "guardian-email" placeholder = "Enter your email">
+                <label for="guardian-username" >Username</label>
+                <input type="email" name="guardian-username" id = "guardian-username" placeholder = "Enter your username">
+                <label for="guardian-password" >Password</label>
+                <input type="password" name="guardian-password" id = "guardian-password" placeholder = "Enter your password">
+                <label for="guardian-confirm-password" >Confirm Password</label>
+                <input type="password" name="guardian-confirm-password" id = "guardian-confirm-password" placeholder = "Enter your password">
+            </div>
+            <div class="guardian-personal-information">
+                <h4 class = "guardian-form-preview-header">Personal Information</h4>
+                <label for="guardian-fn" >First name</label>
+                <input type="text" name="guardian-fn" id = "guardian-fn" placeholder = "Enter your first name">
+                <label for="guardian-mn" >Middle name (optional)</label>
+                <input type="text" name="guardian-mn" id = "guardian-mn" placeholder = "Enter your middle name">
+                <label for="guardian-ln" >Last name</label>
+                <input type="text" name="guardian-ln" id = "guardian-ln" placeholder = "Enter your last name">
+                <label for="guardian-bd" >Birth date</label>
+                <input type="date" name="guardian-bd" id = "guardian-bd">
+                <label for="guardian-contact-number" >Contact number</label>
+                <input type="number" name="guardian-contact-number" id = "guardian-contact-number" placeholder = "Enter your contact number">
+                <label for="guardian-address" >Address</label>
+                <input type="text" name="guardian-address" id = "guardian-address" placeholder = "Enter your address">
+            </div>
+        </div>
+        <div class="guardian-btns">
+            <button type = "button" class="prev-btn">Back</button>
+            <button type = "button" class="next-btn">Next</button>
+            <button type = "submit" class="submit-btn">Submit</button>
+        </div>
+    </form> 
+      
     <div class="img"></div>
 </div>

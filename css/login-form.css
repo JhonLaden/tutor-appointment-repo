@@ -11,7 +11,7 @@
 }
 
 .form-login .login-main{
-    display: none;
+    display: flex;
 }
 
 .form-login .container{
@@ -49,11 +49,23 @@
     width: 100%;
 }
 
-.form-login .login-main .login-main-preview .login-form label, .form-login .tutor-form .tutor-form-preview .tutor-account label{
+.form-login .login-main .login-main-preview .login-form label, 
+.form-login .tutor-form .tutor-form-preview .tutor-account label,
+.form-login .tutor-form .tutor-form-preview .tutor-personal-information label,
+.form-login .learner-form .learner-form-preview .learner-account label,
+.form-login .learner-form .learner-form-preview .learner-personal-information label,
+.form-login .guardian-form .guardian-form-preview .guardian-account label,
+.form-login .guardian-form .guardian-form-preview .guardian-personal-information label{
     margin-bottom: 0.2em;
 }
 
-.form-login .login-main .login-main-preview .login-form input, .form-login .tutor-form .tutor-form-preview .tutor-account input{
+.form-login .login-main .login-main-preview .login-form input, 
+.form-login .tutor-form .tutor-form-preview .tutor-account input,
+.form-login .tutor-form .tutor-form-preview .tutor-personal-information input,
+.form-login .learner-form .learner-form-preview .learner-account input,
+.form-login .learner-form .learner-form-preview .learner-personal-information input,
+.form-login .guardian-form .guardian-form-preview .guardian-account input,
+.form-login .guardian-form .guardian-form-preview .guardian-personal-information input{
     margin-bottom: 1em;
     width: 100%;
     padding: 0.6em;
@@ -156,9 +168,20 @@
     color: var(--h-text);
 }
 
-.form-login .sign-in .sign-in-btns button:enabled{
+.form-login .sign-in .sign-in-btns button:enabled, 
+.form-login .tutor-form .tutor-btns .prev-btn, 
+.form-login .tutor-form .tutor-btns .next-btn,
+.form-login .learner-form .learner-btns .prev-btn, 
+.form-login .learner-form .learner-btns .next-btn,
+.form-login .guardian-form .guardian-btns .prev-btn, 
+.form-login .guardian-form .guardian-btns .next-btn,
+.form-login .tutor-form .tutor-btns .submit-btn{
     background-color: var(--h-text);
     color: #fff
+}
+
+.form-login .submit-btn{
+    display: none;
 }
 
 .form-login .sign-in .sign-in-preview .form-type-radio .radio-container{
@@ -197,7 +220,7 @@
 /* TUTOR FORM */
 .form-login .tutor-form{
     padding: 3rem 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -205,7 +228,7 @@
 .form-login .tutor-form .tutor-header{
     display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .form-login .tutor-form .tutor-header img{
@@ -221,10 +244,203 @@
     width: 100%;
 }
 
-
-
 .form-login .tutor-form .tutor-form-preview .tutor-account{
     display: flex;
     flex-direction: column;
+}
 
+.form-login .tutor-form .tutor-form-preview .tutor-form-preview-header{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--h-text);
+}
+
+.form-login .tutor-form .tutor-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-login .tutor-form .tutor-form-preview .tutor-personal-information{
+    display: none;
+    flex-direction: column;
+    height: 90%;
+    overflow-x: scroll;
+}
+
+/* LEARNER FORM */
+.form-login .learner-form{
+    padding: 3rem 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login .learner-form .learner-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.form-login .learner-form .learner-header img{
+    height: 2rem;
+}
+
+.form-login .learner-form .learner-header .learner-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-login .learner-form .learner-form-preview {
+    width: 100%;
+}
+
+.form-login .learner-form .learner-form-preview .learner-account{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login .learner-form .learner-form-preview .learner-form-preview-header{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--h-text);
+}
+
+.form-login .learner-form .learner-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-login .learner-form .learner-form-preview .learner-personal-information{
+    display: none;
+    flex-direction: column;
+    height: 80%;
+    overflow-x: scroll;
+}
+
+/* learner-guardian */
+
+.form-login .learner-form .learner-form-preview .learner-guardian{
+    display: none;
+    flex-direction: column;
+}
+
+.form-login .learner-form .learner-form-preview .learner-guardian-header{
+    display: none;
+    flex-direction: column;
+    height: 80%;
+    overflow-x: scroll;
+}
+
+.form-login .learner-form{
+    padding: 3rem 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login .learner-form .learner-guardian-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.form-login .learner-form .learner-guardian-header img{
+    height: 2rem;
+}
+
+.form-login .learner-form .learner-header .learner-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-login .learner-form .learner-form-preview {
+    width: 100%;
+}
+
+.form-login .learner-form .learner-form-preview .learner-account{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login .learner-form .learner-form-preview .learner-form-preview-header{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--h-text);
+}
+
+.form-login .learner-form .learner-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-login .learner-form .learner-form-preview .learner-personal-information{
+    display: none;
+    flex-direction: column;
+    height: 80%;
+    overflow-x: scroll;
+}
+
+/* GUARDIAN-FORM */
+.form-login .guardian-form{
+    padding: 3rem 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login .guardian-form .guardian-form-preview .guardian-account{
+    display: none;
+    flex-direction: column;
+}
+
+.form-login .guardian-form .guardian-form-preview{
+    width: 100%;
+}
+
+.form-login .guardian-form .guardian-form-preview .guardian-account .guardian-form-preview-header{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--h-text);
+}
+
+
+
+
+
+.form-login .guardian-form .guardian-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.form-login .guardian-form .guardian-header{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-login .guardian-form .guardian-header img{
+    height: 2rem;
+}
+
+.form-login .guardian-form .guardian-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* guardian-personal-information */
+.form-login .guardian-form .guardian-form-preview .guardian-personal-information{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    overflow-x: scroll;
+}
+
+.form-login .guardian-form .guardian-form-preview .guardian-personal-information .guardian-form-preview-header{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--h-text);
 }
