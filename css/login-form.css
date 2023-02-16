@@ -1,15 +1,25 @@
 /* login */
 
 .form-login {
-    display: flex;
+    display: none;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     background-color: #fff;
     font-size: 1.1rem;
 }
 
+.disabled-bg{
+    display: none;
+}
+
+.form-login .form-login-x-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
 .form-login .login-main{
     display: flex;
 }
@@ -54,6 +64,8 @@
 .form-login .tutor-form .tutor-form-preview .tutor-personal-information label,
 .form-login .learner-form .learner-form-preview .learner-account label,
 .form-login .learner-form .learner-form-preview .learner-personal-information label,
+.form-login .learner-form .learner-form-preview .learner-guardian label,
+
 .form-login .guardian-form .guardian-form-preview .guardian-account label,
 .form-login .guardian-form .guardian-form-preview .guardian-personal-information label{
     margin-bottom: 0.2em;
@@ -64,6 +76,10 @@
 .form-login .tutor-form .tutor-form-preview .tutor-personal-information input,
 .form-login .learner-form .learner-form-preview .learner-account input,
 .form-login .learner-form .learner-form-preview .learner-personal-information input,
+.form-login .learner-form .learner-form-preview .learner-guardian input,
+.form-login .learner-form .learner-form-preview .learner-guardian select,
+
+
 .form-login .guardian-form .guardian-form-preview .guardian-account input,
 .form-login .guardian-form .guardian-form-preview .guardian-personal-information input{
     margin-bottom: 1em;
@@ -324,10 +340,12 @@
 .form-login .learner-form .learner-form-preview .learner-guardian{
     display: none;
     flex-direction: column;
+    height: 80%;
+    overflow-x: scroll;
 }
 
 .form-login .learner-form .learner-form-preview .learner-guardian-header{
-    display: none;
+    display: flex;
     flex-direction: column;
     height: 80%;
     overflow-x: scroll;
@@ -443,4 +461,23 @@
     text-align: center;
     margin-bottom: 2em;
     color: var(--h-text);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 375px){
+    .form-login{
+        height: 630px;
+        width: 375px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .disabled-bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        background-color: #303030;
+        z-index: 1;
+        opacity: 0.7;
+    }
 }

@@ -9,9 +9,6 @@
     <link rel = "stylesheet" href = "../css/style.css">
     <link rel = "stylesheet" href = "../css/login-form.css">
     <link rel = "stylesheet" href = "../css/collapse.css">
-
-
-
     
     <title>Home</title>
 </head>
@@ -30,8 +27,8 @@
                     <li  id = "about-link" class = "nav-item" ><a  class = "nav-link <?php echo $about; ?>" href="#">ABOUT US</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
 
-                    <button class= "log-in">Login</button>
-                    <button class= "sign-up">Sign up</button>
+                    <button class= "log-in join">Login</button>
+                    <button class= "sign-up join">Sign up</button>
                 </ul>
                 
 

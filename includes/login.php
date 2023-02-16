@@ -1,4 +1,6 @@
+<div class="disabled-bg" ></div>
 <div class="form-login">
+    <i class='bx bx-x form-login-x-btn'></i>
     <div class="login-main container">
         <div class="login-main-preview">
             <div class="login-header">

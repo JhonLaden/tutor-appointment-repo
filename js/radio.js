@@ -27,14 +27,14 @@ signInPrevBtn.addEventListener('click', function(){
 signInNextBtn.addEventListener('click', function(){
     if(typeRadio[0].checked){
         const tutorForm = formLogin.getElementsByClassName('tutor-form')[0];
-        const signin = formLogin.getElementsByClassName('sign-in')[0];
         tutorForm.style.display = "flex";
-        signin.style.display = "none";
     }else if(typeRadio[1].checked){
         const learnerForm = formLogin.getElementsByClassName('learner-form')[0];
-        const signin = formLogin.getElementsByClassName('sign-in')[0];
         learnerForm.style.display = "flex";
-        signin.style.display = "none";
-        console.log("working");
+    }else if(typeRadio[2].checked){
+        const learnerForm = formLogin.getElementsByClassName('learner-form')[0];
+        learnerForm.style.display = "flex";
     }
+    const signin = formLogin.getElementsByClassName('sign-in')[0];
+    signin.style.display = "none";
 });

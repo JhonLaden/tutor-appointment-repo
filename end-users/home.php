@@ -5,7 +5,7 @@
     require_once "../includes/login.php";
 
 ?>
-    <main>
+    <main >
         <div class="wall wall-bg-home">
             <div class="container container-wall fluid-height">
                 <div class="wall-body container-wall">
@@ -15,9 +15,6 @@
                 <img src="../images/wall.png" alt="wall">
             </div>
         </div>
-
-    
-
 
         <div class="container">
             <div class="pic-description">
