@@ -7,7 +7,7 @@
                 <div class="welcome-header">Welcome to Tutour</div>
                 <p class="small-text">Login in to get started!</p>
             </div>
-            <form action="" class="login-form">
+            <form action="../end-users/home.php" class="login-form">
                 <label for="username" >Username</label>
                 <input type="text" name="username" id = "username" placeholder = "Enter your username">
                 <label for="password" >Password</label>
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <form class = "tutor-form container" action="../end-users/test.php" method = "POST">
+    <form class = "tutor-form container" action="../end-users/home.php" method = "POST">
         <div class="tutor-header">
             <img src="../images/other/tutor.png" alt="">
             <h4 class="tutor-title">Sign up as tutor</h4>
@@ -107,7 +107,7 @@
         </div>
     </form> 
 
-    <form class = "learner-form container" action="../end-users/test.php" method = "POST">
+    <form class = "learner-form container" action="../end-users/home.php" method = "POST">
         <div class="learner-header">
             <img src="../images/other/learner.png" alt="">
             <h4 class="learner-title">Sign up as learner</h4>
@@ -142,7 +142,7 @@
             <div class="learner-guardian">
                 <h4 class = "learner-guardian-header">Guardian(optional)</h4>
                 <label for="learner-guardian-fn" >First name</label>
-                <input type="text" name="learner-fn" id = "learner-guardian-fn" placeholder = "Enter your first name">
+                <input type="text" name="learner-guardian-fn" id = "learner-guardian-fn" placeholder = "Enter your first name">
                 <label for="learner-guardian-mn" >Middle name (optional)</label>
                 <input type="text" name="learner-guardian-mn" id = "learner-guardian-mn" placeholder = "Enter your middle name">
                 <label for="learner-guardian-ln" >Last name</label>
@@ -164,7 +164,7 @@
         <div class="learner-btns">
             <button type = "button" class="prev-btn">Back</button>
             <button type = "button" class="next-btn">Next</button>
-            <button type = "submit" class="submit-btn">Submit</button>
+            <input type = "submit" class="submit-btn" name = "submit-learner" id = "submit-learner" value = "submit">
         </div>
     </form> 
 

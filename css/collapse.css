@@ -1,5 +1,5 @@
 .collapsible{
-    min-width: 400px;
+    width: 100%;
     overflow: hidden;
     font-weight: 400;
 }
@@ -19,6 +19,7 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 5px;
+    width: 100%;
 }
 
 
@@ -63,4 +64,10 @@
 .collapsible-text p{
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media (min-width: 440px){
+    .collapsible label{
+        width: 80%;
+    }
 }
