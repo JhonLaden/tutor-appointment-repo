@@ -24,7 +24,7 @@
                     <li class = "nav-item"><a class = "nav-link <?php echo $home; ?>" href="../end-users/home.php">HOME</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $features; ?>" href="#">FEATURES</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $tutors; ?>" href="../end-users/tutors.php">TUTORS</a></li>
-                    <li  id = "about-link" class = "nav-item" ><a  class = "nav-link <?php echo $about; ?>" href="#">ABOUT US</a></li>
+                    <li  id = "about-link" class = "nav-item" ><a  class = "nav-link" href="#about">ABOUT US</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
 
                     <button class= "log-in join">Login</button>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="logo-quote container-flex">
-                <img class = "logo" src="../images/logo.png" alt="">
+                <img class = "logo" src="../images/grid/profile/logo-orig.png" alt="">
                 <div class="quote h-text">Best tutor in town</div>
             </div>
 
