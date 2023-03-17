@@ -688,7 +688,9 @@ footer h2{
 
 /* PROFILE PAGE */
 .profile{
-    padding: 1em 0;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -741,6 +743,8 @@ footer h2{
 .profile-main .profile-subjects-skills{
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }
 
 
@@ -760,7 +764,110 @@ footer h2{
     list-style-position: inside;
 }
 
-.profile-main .profile-subjects-skills  img{
-    height: 50px;
+.profile-main .properties .header-img{
+    height: 30px;
+    width: 30px;
     max-height: 100%;
+    margin-right: 1em;
+}
+
+.profile-main .properties{
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.profile-main .properties .details{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.profile-main  .properties .profile-properties-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4em;
+}
+
+.profile-main .profile-experience  h3{
+    color: #64A75E;
+}
+.profile-main .profile-education  h3{
+    color: var(--h-text);
+}
+
+.profile-main  .properties .details p{
+    margin-bottom: 1rem;
+}
+
+.profile-main  .properties h3{
+    font-weight: 500;
+}
+
+.profile-details .profile-details-container{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0.7em 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 10px 7px gray;
+}
+
+.profile-details .profile-details-header{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+
+.profile-details .offered-services .services-list{
+    list-style-position: inside;
+    list-style-type: upper-alpha;
+}
+
+.profile-details .offered-services .services-list .item{
+    margin-bottom: 0.3em;
+}
+
+.profile-details .offered-services .services-list .item:last-child{
+    margin-bottom: 1em;
+}
+
+.profile-details .location .appointment-btn{
+    width: 100%;
+    margin-top: 1em;
+    background-color: lightgreen;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* profile media queries */
+
+@media (min-width: 720px) {
+
+    .profile{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .profile .profile-main{
+        width: 65%;
+    }
+    .profile .profile-details{
+        width: 28%;
+    }
+    .profile .profile-main .profile-main-head{
+        flex-direction: row;
+        flex-flow: row-reverse;
+    }
+    .profile .profile-main .profile-main-head .profile-name-description .profile-description p {
+        text-align: start;
+    }
+    .profile .profile-main .profile-main-head img{
+        height: 150px;
+    }
+    
+}
+
+@media (min-width: 450px){
+    .profile-main .profile-subjects-skills{
+        flex-direction: row;
+    }
 }
