@@ -1,6 +1,7 @@
 <?php
     require_once "../variables/nav.php";
     $faqs = "active";
+    $title = 'TutourOnline | FAQs';
     require_once "../includes/header.php";
     require_once "../includes/login.php";
 

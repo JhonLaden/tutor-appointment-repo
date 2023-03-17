@@ -1,6 +1,8 @@
 <?php
     require_once "../variables/nav.php";
     $home = "active";
+    $title = 'TutourOnline | Home';
+
     require_once "../includes/header.php";
     require_once "../includes/login.php";
 
