@@ -856,6 +856,7 @@ footer h2{
     .profile .profile-main .profile-main-head{
         flex-direction: row;
         flex-flow: row-reverse;
+        gap: 2rem;
     }
     .profile .profile-main .profile-main-head .profile-name-description .profile-description p {
         text-align: start;
@@ -863,7 +864,9 @@ footer h2{
     .profile .profile-main .profile-main-head img{
         height: 150px;
     }
-    
+    .profile-main .properties .details p{
+        max-width: 80%;
+    }
 }
 
 @media (min-width: 450px){
