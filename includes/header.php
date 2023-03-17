@@ -10,7 +10,7 @@
     <link rel = "stylesheet" href = "../css/login-form.css">
     <link rel = "stylesheet" href = "../css/collapse.css">
     
-    <title>Home</title>
+    <title><?php $title ?></title>
 </head>
 <body>
     <header id = "head" class = "bg-blue">

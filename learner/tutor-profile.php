@@ -1,12 +1,13 @@
 <?php
     require_once "../variables/nav.php";
     $home = "active";
+    $title = "TutourOnline | Profile";
     require_once "../includes/header.php";
     require_once "../includes/login.php";
 
 ?>
 
-
+    <title>TutourOnline | Profile</title>
     <main> 
         <div class="profile container">
             <div class="profile-main">

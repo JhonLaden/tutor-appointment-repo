@@ -4,4 +4,5 @@
     $tutors;
     $about;
     $faqs;
+    $title;
 ?>
