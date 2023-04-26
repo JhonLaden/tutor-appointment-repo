@@ -10,6 +10,9 @@
     <link rel = "stylesheet" href = "../css/style.css">
     <link rel = "stylesheet" href = "../css/login-form.css">
     <link rel = "stylesheet" href = "../css/collapse.css">
+    <!-- TESTING MODAL -->
+    <link rel = "stylesheet" href = "../css/modal.css">
+
     
     <title><?php echo $title; ?></title>
 </head>
@@ -41,7 +44,7 @@
             </div>
 
             <div class="join-btn">
-                <a href = "#" class = "join" >Join</a>
+                <a href = "../includes/testing.php" class = "join" >Join</a>
             </div>
 
             

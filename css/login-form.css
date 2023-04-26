@@ -52,6 +52,16 @@
     font-weight: 400; 
 }
 
+.login-sumit{
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 5px;
+    border: 2px solid var(--h-text);
+    display: flex;
+    justify-content: center;
+}
+
 .form-login .login-main .login-main-preview .login-form{
     display: flex;
     flex-direction: column;

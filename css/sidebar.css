@@ -1,0 +1,126 @@
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    text-decoration: none;
+    padding: 1em;
+    color: #333;
+  }
+
+ 
+  
+  .sidebar li.active a, .sidebar li a:hover{
+    cursor: pointer;
+    color: #7951A8;
+  }
+
+  .sidebar li a:hover{
+    background-color: #ddd;
+
+  }
+ 
+  
+  .sidebar li a i {
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar li a {font-size: 18px;}
+  }
+
+  /* sidebar logo */
+  .sidebar-logo {
+    display: flex;
+   
+    align-items: center;
+    height: 3em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  .sidebar-logo img {
+    height: 100%;
+    margin-right: 0.8em;
+  }
+
+  /* sidebar admin profile */
+  .admin-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4;
+    padding: 1em;
+    font-size: 0.8rem;
+
+  }
+  
+  .admin-profile img {
+    height: 100%;
+    width: 4em;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .profile-details {
+    width: 8em;
+    height: 100%;
+    background-color: #f1f1f1;
+    margin-left: 1em;
+  }
+
+  .mainbar{
+    position: absolute;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 100%;
+    padding: 1em;
+  }
+
+  .mainbar .topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mainbar .topbar i{
+    margin-right: 1em;
+  }
+
+
+  .mainbar .search-container{
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .mainbar .search-container .search-input{
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.2em;
+    border-radius: 5px;
+    
+  }

@@ -7,16 +7,31 @@
                 <div class="welcome-header">Welcome to Tutour</div>
                 <p class="small-text">Login in to get started!</p>
             </div>
-            <form action="../end-users/home.php" class="login-form">
+
+            <!-- login form -->
+            <!-- action="../end-users/home.php" -->
+            <form name="login-form" class="login-form" action = "../admin/dashboard.php" method = "GET">
+                <?php
+                    if (isset($_GET['login-submit'])){
+                        echo $_GET['username'];
+                        echo $_GET['password'];    
+                    }
+                ?>
                 <label for="username" >Username</label>
                 <input type="text" name="username" id = "username" placeholder = "Enter your username">
                 <label for="password" >Password</label>
                 <input type="password" name="password" id = "password" placeholder = "Enter your password">
+
+                <!-- test submit button  -->
+                <!-- DELETE THIS IF NOT WORKING!!! -->
+                <input type="submit" name = "login-submit" class = "login-submit" value = "LOGIN" >
+
+               
             </form>
 
             <p class="forgot-password">Forgot Password?</p>
 
-            <button type = "button" class="login-submit">LOGIN</button>
+            <!-- <button type = "submit" class="login-submit">LOGIN</button> -->
 
             <div class="lines">
                 <div class="line"></div>

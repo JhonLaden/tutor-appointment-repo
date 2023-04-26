@@ -65,6 +65,10 @@
     <script src = "../js/tutor-btns.js"> </script>
     <script src = "../js/old-learner-btns.js"></script>
     <script src = "../js/guardian-btns.js"></script>
+    <!-- TESTING MODAL -->
+    <script src = "../js/modals.js"></script>
+
+    
 
 
 </body>
