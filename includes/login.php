@@ -10,7 +10,7 @@
 
             <!-- login form -->
             <!-- action="../end-users/home.php" -->
-            <form name="login-form" class="login-form" action = "../admin/dashboard.php" method = "GET">
+            <form name="login-form" class="login-form" action = "../admin/tutors.php" method = "GET">
                 <?php
                     if (isset($_GET['login-submit'])){
                         echo $_GET['username'];
