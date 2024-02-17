@@ -10,6 +10,8 @@
     <link rel = "stylesheet" href = "../css/style.css">
     <link rel = "stylesheet" href = "../css/login-form.css">
     <link rel = "stylesheet" href = "../css/collapse.css">
+    <link rel = "stylesheet" href = "../css/tutor-sign-up.css">
+
     <!-- TESTING MODAL -->
     <link rel = "stylesheet" href = "../css/modal.css">
 

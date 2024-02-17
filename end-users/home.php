@@ -7,38 +7,8 @@
     require_once "../includes/login.php";
     require_once "../classes/learner.class.php";
     require_once "../tools/functions.php";
-
-    if(isset($_POST['submit-learner'])){
-        if(isset($_POST['submit-learner'])){
-            echo 'if working';
-            $learner = new Learner();
-            //sanitize user inputs
-            $learner->email = htmlentities($_POST['learner-email']);
-            $learner->username = htmlentities($_POST['learner-username']);
-            $learner->password = htmlentities($_POST['learner-password']);
-            $learner->firstname = htmlentities($_POST['learner-fn']);
-            $learner->middlename = htmlentities($_POST['learner-mn']);
-            $learner->lastname = htmlentities($_POST['learner-ln']);
-            $learner->birthdate = htmlentities($_POST['learner-bd']);
-            $learner->contactnumber = htmlentities($_POST['learner-contact-number']);
-            $learner->address = htmlentities($_POST['learner-address']);
-            $learner->guardianFirstname = htmlentities($_POST['learner-guardian-fn']);
-            $learner->guardianMiddlename = htmlentities($_POST['learner-guardian-mn']);
-            $learner->guardianLastname = htmlentities($_POST['learner-guardian-ln']);
-            $learner->guardianBirthdate = htmlentities($_POST['learner-guardian-bd']);
-            $learner->guardianContactnumber = htmlentities($_POST['learner-guardian-contact-number']);
-            $learner->guardianSex = htmlentities($_POST['learner-guardian-sex']);
-            $learner->guardianAddress = htmlentities($_POST['learner-guardian-address']);
-            
-            if(validate_add_learner($_POST)){
-                if($learner->add_learner()){  
-                    //redirect user to faculty page after saving
-                    header('location: home.php');
-                }
-            }
-        }
-    }
-
+    
+    $current_page = "home.php";
 ?>
     <main >
         <div class="wall wall-bg-home">
@@ -117,7 +87,6 @@
 
         
     </main>
-
 <?php
     require_once "../includes/footer.php";
 ?>

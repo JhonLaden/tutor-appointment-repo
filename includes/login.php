@@ -1,3 +1,31 @@
+<?php
+    if(isset($_POST['username']) && isset($_POST['password'])){
+        require_once "../classes/tutor.class.php";
+        //Sanitizing the inputs of the users. Mandatory to prevent injections!
+        $username = htmlentities($_POST['username']);
+        $password = htmlentities($_POST['password']);
+
+        
+        $tutor = new Tutor();
+
+        $accounts = $tutor->show();
+        foreach($accounts as $keys => $value){
+            //check if the username and password match in the array
+            if($username == $value['username'] && $password == $value['password']){
+                //if match then save username, fullname and type as session to be reused somewhere else
+                $_SESSION['logged-in'] = $value['username'];
+
+                header('location: tutors.php');
+              
+            }else{
+                echo 'fail';
+        
+            }
+        }
+        //set the error message if account is invalid
+        $error = 'Invalid username/password. Try again.';
+    }
+?>
 <div class="disabled-bg" ></div>
 <div class="form-login">
     <i class='bx bx-x form-login-x-btn'></i>
@@ -10,23 +38,18 @@
 
             <!-- login form -->
             <!-- action="../end-users/home.php" -->
-            <form name="login-form" class="login-form" action = "../admin/tutors.php" method = "GET">
-                <?php
-                    if (isset($_GET['login-submit'])){
-                        echo $_GET['username'];
-                        echo $_GET['password'];    
-                    }
-                ?>
+            <form name="login-form" class="login-form" action = '<?php $current_page?>' method = "POST">
+            
                 <label for="username" >Username</label>
-                <input type="text" name="username" id = "username" placeholder = "Enter your username">
+                <input type="text" name="username" id = "username" placeholder = "Enter your username" required>
                 <label for="password" >Password</label>
-                <input type="password" name="password" id = "password" placeholder = "Enter your password">
-
+                <input type="password" name="password" id = "password" placeholder = "Enter your password" required>
+                    
                 <!-- test submit button  -->
                 <!-- DELETE THIS IF NOT WORKING!!! -->
                 <input type="submit" name = "login-submit" class = "login-submit" value = "LOGIN" >
 
-               
+                
             </form>
 
             <p class="forgot-password">Forgot Password?</p>
@@ -56,7 +79,7 @@
                     <div class="radio-container">
                         <img src="../images/other/tutor.png" alt="">
                         <input class = "tutor-radio type-radio" type="radio" id="tutor" name="type" value="tutor">
-                        <label class = "tutor-label type-label"for="tutor">Tutor</label>
+                        <a href = "../end-users/tutor-sign-up.php" >Tutor</a>
                     </div>
 
                     <div class="radio-container">
