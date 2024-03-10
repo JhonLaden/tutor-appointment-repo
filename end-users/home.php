@@ -8,6 +8,7 @@
     require_once "../classes/learner.class.php";
     require_once "../tools/functions.php";
     
+
     $current_page = "home.php";
 ?>
     <main >

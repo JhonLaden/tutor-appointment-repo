@@ -1,25 +1,39 @@
 <?php
     if(isset($_POST['username']) && isset($_POST['password'])){
         require_once "../classes/tutor.class.php";
+        require_once "../classes/learner.class.php";
+
         //Sanitizing the inputs of the users. Mandatory to prevent injections!
         $username = htmlentities($_POST['username']);
         $password = htmlentities($_POST['password']);
 
         
         $tutor = new Tutor();
+        $learner = new Learner();
 
         $accounts = $tutor->show();
         foreach($accounts as $keys => $value){
             //check if the username and password match in the array
             if($username == $value['username'] && $password == $value['password']){
                 //if match then save username, fullname and type as session to be reused somewhere else
-                $_SESSION['logged-in'] = $value['username'];
+                $_SESSION['logged-in'] = $value;
 
-                header('location: tutors.php');
+                header('location: ../tutor/tutor-profile.php');
+
               
-            }else{
-                echo 'fail';
-        
+            }
+        }
+
+        $accounts = $learner->show();
+
+        foreach($accounts as $keys => $value){
+            //check if the username and password match in the array
+            if($username == $value['username'] && $password == $value['password']){
+                //if match then save username, fullname and type as session to be reused somewhere else
+                $_SESSION['logged-in'] = $value;
+                
+                header('location: ../end-users/tutors.php');
+                
             }
         }
         //set the error message if account is invalid

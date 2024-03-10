@@ -17,6 +17,7 @@
 
     
     <title><?php echo $title; ?></title>
+    
 </head>
 <body>
     <header id = "head" class = "bg-blue">
@@ -33,8 +34,28 @@
                     <li  id = "about-link" class = "nav-item" ><a  class = "nav-link" href="#about">ABOUT US</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
 
-                    <button class= "log-in join">Login</button>
-                    <button class= "sign-up join">Sign up</button>
+                    <?php 
+                    
+                        if(isset($_SESSION['logged-in'])){
+                            if($_SESSION['logged-in']['type'] == 'learner'){
+                            ?>
+                            
+                            <button class= " "><?php echo $_SESSION['logged-in']['username'];?></button>
+                            <button class= "log-in join"> <a href="../includes/logout.php">Logout</a></button>
+                        <?php
+                            }else{?>
+                                <button class= ""><a href="../tutor/tutor-profile.php"><?php echo $_SESSION['logged-in']['username'];?></a></button>
+                                <button class= "log-in"> <a href="../includes/logout.php">Logout</a></button>
+                            <?php
+                            }
+                  
+                        }else{
+                    ?>
+                        <button class= "log-in join">Login</button>
+                        
+                    <?php
+                    }
+                    ?>
                 </ul>
                 
 

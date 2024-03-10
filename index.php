@@ -16,6 +16,5 @@
     if(isset($_SESSION['logged-in'])){
         header('location: end-users/home.php');
     }else{
-        header('location: end-users/home.php');
     }
 ?>

@@ -1,10 +1,13 @@
 <?php
+    session_start();
     require_once "../variables/nav.php";
     $tutors = "active";
     $title = 'TutourOnline | Tutors';
     require_once "../includes/header.php";
     require_once "../includes/login.php";
-
+    require_once "../classes/learner.class.php";
+    require_once "../classes/tutor.class.php";
+    require_once "../tools/functions.php";
 ?>
 <main >
     <div class="wall wall-bg-home">
