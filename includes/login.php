@@ -13,10 +13,10 @@
             //check if the username and password match in the array
             if($username == $value['username'] && $password == $value['password']){
                 //if match then save username, fullname and type as session to be reused somewhere else
-                $_SESSION['logged-in'] = $value['username'];
+                $_SESSION['logged-in'] = $value;
 
                 header('location: tutors.php');
-              
+     
             }else{
                 echo 'fail';
         

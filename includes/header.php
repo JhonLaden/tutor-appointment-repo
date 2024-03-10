@@ -33,8 +33,17 @@
                     <li  id = "about-link" class = "nav-item" ><a  class = "nav-link" href="#about">ABOUT US</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
 
-                    <button class= "log-in join">Login</button>
-                    <button class= "sign-up join">Sign up</button>
+
+                    <?php
+                        if(isset($_SESSION['logged-in'])){?>
+                            <button class="log-in join"> <?php echo $_SESSION['logged-in']['username']  ?></button>
+                    <?php    }else{ ?>
+                            <button class= "log-in join">Login</button>
+                            <button class= "sign-up join">Sign up</button>
+                    <?php
+                        }
+                    ?>
+                    
                 </ul>
                 
 
@@ -47,6 +56,7 @@
 
             <div class="join-btn">
                 <a href = "../includes/testing.php" class = "join" >Join</a>
+            
             </div>
 
             
