@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once "../variables/nav.php";
     $tutors = "active";
     $title = 'TutourOnline | Profile';
@@ -85,7 +86,12 @@
                     <p class="location-p-container"><i class='bx bxs-map-pin'></i> Recodo, Zamboanga City</p>
                     <p class="location-p-container"><i class='bx bx-desktop' ></i> Online/Homebase</p>
                     <p class="location-p-container"><i class='bx bx-wallet'></i> ₱100 - ₱300/hr</p>
-                    <button class="appointment-btn">Make an appointment</button>
+                    <?php
+                        if(isset($_SESSION['logged-in']) && $_SESSION['logged-in']['type'] == 'learner'){?>
+                        <button class="appointment-btn">Make an appointment</button>   
+                    <?php
+                        }
+                    ?>
                 </div>
                 <div class="ratings profile-details-container">
                     <p class="profile-details-header">Rating Breakdown</p>

@@ -112,7 +112,7 @@
     <p class="container t-color">63,449 services available</p>
     
     <div class="container grid-container">
-        <a class="grid-item" href = "../learner/tutor-profile.php">
+        <a class="grid-item" href = "../tutor/tutor-profile.php">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall1.png" alt="wall1">
             </div>

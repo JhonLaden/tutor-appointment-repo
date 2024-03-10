@@ -35,17 +35,17 @@
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
 
                     <?php 
-                    
+                        
                         if(isset($_SESSION['logged-in'])){
                             if($_SESSION['logged-in']['type'] == 'learner'){
                             ?>
                             
                             <button class= " "><?php echo $_SESSION['logged-in']['username'];?></button>
-                            <button class= "log-in join"> <a href="../includes/logout.php">Logout</a></button>
+                            <button class= ""> <a href="../includes/logout.php">Logout</a></button>
                         <?php
                             }else{?>
                                 <button class= ""><a href="../tutor/tutor-profile.php"><?php echo $_SESSION['logged-in']['username'];?></a></button>
-                                <button class= "log-in"> <a href="../includes/logout.php">Logout</a></button>
+                                <button class= ""> <a href="../includes/logout.php">Logout</a></button>
                             <?php
                             }
                   

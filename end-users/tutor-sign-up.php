@@ -10,15 +10,37 @@
     if(isset($_POST["submit"])){
         require_once "../classes/tutor.class.php";
         $tutor = new Tutor();
-
+    
+        // Add tutor and get the ID of the inserted tutor
         $isTutorAdded = $tutor->add_tutor($_POST['username'], $_POST['password'], $_POST['firstname'], $_POST['middlename'], $_POST['lastname'], $_POST['phone'], $_POST['address'], $_POST['age']);
+    
+    
         if($isTutorAdded) {
-            header('location: home.php');
+            // Insert tutor profile with tutor ID as foreign key
+            require_once "../classes/tutor_profile.class.php";
+            $tutorProfile = new Tutor_profile();
+    
+            // Insert tutor profile with tutor ID as foreign key
+            $isTutorProfileAdded = $tutorProfile->add_tutor_profile($tutor->getLastInsertedTutorId());
+
+            $accounts = $tutor->show();
+
+            foreach($accounts as $keys => $value){
+                
+                if($tutor->getLastInsertedTutorId() == $value['id'] ){
+                    //if match then save username, fullname and type as session to be reused somewhere else
+                    $_SESSION['logged-in'] = $value;
+                }
+            }
+    
+            if($isTutorProfileAdded) {
+                header('location: ../tutor/tutor-profile.php');
+            }
         }
     }
     require_once "../includes/login.php";
 ?>
-    
+
     <main class = "sign-up-container">
         <div class="sign-up-header">
             <div class =  "img-container"><img src = "../images/other/tutor.png" alt="pic">
@@ -47,8 +69,10 @@
             </div>
             <input type="submit" name = "submit">
             <?php 
-                 if(isset($_POST['submit']) && !isset($isTutorAdded)) {
+                 if(isset($_POST['submit']) && !isset($isTutorProfileAdded)) {
                     echo "invalid";
+                }else{
+                    echo 'success';
                 }
             ?>
         </form>

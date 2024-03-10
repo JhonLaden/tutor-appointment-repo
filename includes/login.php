@@ -1,11 +1,11 @@
 <?php
-    if(isset($_POST['username']) && isset($_POST['password'])){
+    if(isset($_POST['un']) && isset($_POST['pw'])){
         require_once "../classes/tutor.class.php";
         require_once "../classes/learner.class.php";
 
         //Sanitizing the inputs of the users. Mandatory to prevent injections!
-        $username = htmlentities($_POST['username']);
-        $password = htmlentities($_POST['password']);
+        $username = htmlentities($_POST['un']);
+        $password = htmlentities($_POST['pw']);
 
         
         $tutor = new Tutor();
@@ -19,8 +19,6 @@
                 $_SESSION['logged-in'] = $value;
 
                 header('location: ../tutor/tutor-profile.php');
-
-              
             }
         }
 
@@ -54,10 +52,10 @@
             <!-- action="../end-users/home.php" -->
             <form name="login-form" class="login-form" action = '<?php $current_page?>' method = "POST">
             
-                <label for="username" >Username</label>
-                <input type="text" name="username" id = "username" placeholder = "Enter your username" required>
-                <label for="password" >Password</label>
-                <input type="password" name="password" id = "password" placeholder = "Enter your password" required>
+                <label for="un" >Username</label>
+                <input type="text" name="un" id = "un" placeholder = "Enter your username" required>
+                <label for="pw" >Password</label>
+                <input type="password" name="pw" id = "pw" placeholder = "Enter your password" required>
                     
                 <!-- test submit button  -->
                 <!-- DELETE THIS IF NOT WORKING!!! -->
