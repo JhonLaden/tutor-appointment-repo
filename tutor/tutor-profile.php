@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once "../variables/nav.php";
-    $tutors = "active";
+   
     $title = 'TutourOnline | Profile';
     require_once "../includes/header.php";
     require_once "../includes/login.php";
