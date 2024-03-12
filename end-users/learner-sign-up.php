@@ -79,13 +79,7 @@
                 <input type="number" id = "age" name = "age" placeholder = "age" required>
             </div>
             <input type="submit" name = "submit">
-            <?php 
-                 if(isset($_POST['submit']) && !isset($islearnerProfileAdded)) {
-                    echo "invalid";
-                }else{
-                    echo 'success';
-                }
-            ?>
+
         </form>
 
 

@@ -9,6 +9,8 @@
 ?>
 
  
+
+
     <main> 
     
         <div class="record-container container">
@@ -23,13 +25,27 @@
         </tr>
     </thead>
     <tbody>
+    <?php
+
+    require_once '../classes/schedule.class.php';
+    $schedule = new Schedule();
+
+    $accounts = $schedule->show();
+
+    
+     foreach ($accounts as $keys => $value) {
+    ?>
         <tr>
-            <td></td> <!-- Placeholder for Tutor -->
-            <td></td> <!-- Placeholder for Date -->
-            <td></td> <!-- Placeholder for Time -->
-            <td></td> <!-- Placeholder for Fee -->
-            <td></td> <!-- Placeholder for Status -->
+            <td><?php echo $value['tutor_firstname']?></td> <!-- Placeholder for Tutor -->
+            <td><?php echo $value['date']?></td> <!-- Placeholder for Date -->
+            <td><?php echo $value['time']?></td></td> <!-- Placeholder for Time -->
+            <td><?php echo $value['fee']?></td></td> <!-- Placeholder for Fee -->
+            <td><?php echo $value['status']?></td></td> <!-- Placeholder for Status -->
         </tr>
+
+    <?php
+     }
+     ?>
     </tbody>
 </table>
         </div>

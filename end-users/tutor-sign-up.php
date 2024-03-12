@@ -69,11 +69,7 @@
             </div>
             <input type="submit" name = "submit">
             <?php 
-                 if(isset($_POST['submit']) && !isset($isTutorProfileAdded)) {
-                    echo "invalid";
-                }else{
-                    echo 'success';
-                }
+
             ?>
         </form>
 

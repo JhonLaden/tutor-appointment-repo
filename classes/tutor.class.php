@@ -95,6 +95,26 @@ class Tutor{
         }
         return $data; // Return the combined data from both tables
     }
+
+    function getTutorRate($tutor_id) {
+        // Query to retrieve rate for the given tutor ID
+        $sql = "SELECT fee FROM tutor_profile WHERE id_fk = :tutor_id";
+    
+        $query = $this->db->connect()->prepare($sql);
+        $query->bindParam(':tutor_id', $tutor_id, PDO::PARAM_INT);
+        
+        if($query->execute()){
+            $data = $query->fetch(PDO::FETCH_ASSOC);
+            if ($data) {
+                // Fetching data
+                return $data['fee'];
+            } else {
+                return "Tutor not found or rate not available.";
+            }
+        } else {
+            return "Query execution failed.";
+        }
+    }
     
 }
 

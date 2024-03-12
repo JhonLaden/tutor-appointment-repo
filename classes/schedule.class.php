@@ -12,21 +12,27 @@ class Schedule{
     }
 
     function add_schedule($tutorID, $learnerID, $date, $time, $fee, $status){
-        $sql = "INSERT INTO schedule (tutor_id, learner_id, date, time, fee, status) VALUES (:tutor_id, :learner_id, :date, :time, :fee, :status, :address, :age)";
+        try {
+            $sql = "INSERT INTO schedule (tutor_id, learner_id, date, time, fee, status) VALUES (:tutor_id, :learner_id, :date, :time, :fee, :status)";
+        
+            $query = $this->db->connect()->prepare($sql);
+            
+            // Bind parameters
+            $query->bindParam(':tutor_id', $tutorID);
+            $query->bindParam(':learner_id', $learnerID);
+            $query->bindParam(':date', $date);
+            $query->bindParam(':time', $time);
+            $query->bindParam(':fee', $fee);
+            $query->bindParam(':status', $status);
     
-        $query = $this->db->connect()->prepare($sql);
-    
-        $query->bindParam(':tutor_id', $tutor_id);
-        $query->bindParam(':learner_id', $learner_id);
-        $query->bindParam(':date', $date);
-        $query->bindParam(':time', $time);
-        $query->bindParam(':fee', $fee);
-        $query->bindParam(':status', $status);
-
-    
-        if($query->execute()){
-            return true;
-        } else {
+            if($query->execute()){
+                return true;
+            } else {
+                return false;
+            }
+        } catch(PDOException $e) {
+            // Output any PDO exception errors for debugging
+            echo "Error: " . $e->getMessage();
             return false;
         }
     }
@@ -50,15 +56,19 @@ class Schedule{
     }
 
     function show(){
-        $sql = "SELECT * FROM schedule ; ";
-        $query =  $this->db->connect()->prepare($sql);
-        
+        $sql = "SELECT schedule.*, tutor.firstname AS tutor_firstname, learner.firstname AS learner_firstname
+                FROM schedule 
+                INNER JOIN tutor ON schedule.tutor_id = tutor.id
+                INNER JOIN learner ON schedule.learner_id = learner.id;";
+        $query = $this->db->connect()->prepare($sql);
+        $data = array(); // Initialize an array to store the fetched data
         if($query->execute()){
-            $data = $query->fetchAll();
+            $data = $query->fetchAll(PDO::FETCH_ASSOC);
         }
         return $data;
-        
     }
+
+
     
 }
 

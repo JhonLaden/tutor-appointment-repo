@@ -1,44 +1,44 @@
 <?php
-    if(isset($_POST['un']) && isset($_POST['pw'])){
-        require_once "../classes/tutor.class.php";
-        require_once "../classes/learner.class.php";
 
-        //Sanitizing the inputs of the users. Mandatory to prevent injections!
-        $username = htmlentities($_POST['un']);
-        $password = htmlentities($_POST['pw']);
+if (isset($_POST['un']) && isset($_POST['pw'])) {
+    require_once "../classes/tutor.class.php";
+    require_once "../classes/learner.class.php";
 
-        
-        $tutor = new Tutor();
-        $learner = new Learner();
+    //Sanitizing the inputs of the users. Mandatory to prevent injections!
+    $username = htmlentities($_POST['un']);
+    $password = htmlentities($_POST['pw']);
 
-        $accounts = $tutor->show();
-        foreach($accounts as $keys => $value){
-            //check if the username and password match in the array
-            if($username == $value['username'] && $password == $value['password']){
-                //if match then save username, fullname and type as session to be reused somewhere else
-                $_SESSION['logged-in'] = $value;
+    $tutor = new Tutor();
+    $learner = new Learner();
 
-                header('location: ../tutor/tutor-profile.php');
-            }
+    $accounts = $tutor->show();
+    foreach ($accounts as $keys => $value) {
+        //check if the username and password match in the array
+        if ($username == $value['username'] && $password == $value['password']) {
+            //if match then save username, fullname and type as session to be reused somewhere else
+            $_SESSION['logged-in'] = $value;
+
+            header('Location: ../tutor/tutor-profile.php');
+            exit; // Important to terminate script execution after redirection
         }
-
-        $accounts = $learner->show();
-
-        foreach($accounts as $keys => $value){
-            //check if the username and password match in the array
-            if($username == $value['username'] && $password == $value['password']){
-                //if match then save username, fullname and type as session to be reused somewhere else
-                $_SESSION['logged-in'] = $value;
-                
-                header('location: ../end-users/tutors.php');
-                
-            }
-        }
-        //set the error message if account is invalid
-        $error = 'Invalid username/password. Try again.';
     }
-?>
-<div class="disabled-bg" ></div>
+
+    $accounts = $learner->show();
+    foreach ($accounts as $keys => $value) {
+        //check if the username and password match in the array
+        if ($username == $value['username'] && $password == $value['password']) {
+            //if match then save username, fullname and type as session to be reused somewhere else
+            $_SESSION['logged-in'] = $value;
+
+            header('Location: ../end-users/tutors.php');
+            exit; // Important to terminate script execution after redirection
+        }
+    }
+    //set the error message if account is invalid
+    $error = 'Invalid username/password. Try again.';
+}?>
+<!-- HTML content starts here -->
+<div class="disabled-bg"></div>
 <div class="form-login">
     <i class='bx bx-x form-login-x-btn'></i>
     <div class="login-main container">
@@ -47,16 +47,12 @@
                 <div class="welcome-header">Welcome to Tutour</div>
                 <p class="small-text">Login in to get started!</p>
             </div>
-
-            <!-- login form -->
-            <!-- action="../end-users/home.php" -->
             <form name="login-form" class="login-form" action = '<?php $current_page?>' method = "POST">
-            
                 <label for="un" >Username</label>
                 <input type="text" name="un" id = "un" placeholder = "Enter your username" required>
                 <label for="pw" >Password</label>
                 <input type="password" name="pw" id = "pw" placeholder = "Enter your password" required>
-                    
+    
                 <!-- test submit button  -->
                 <!-- DELETE THIS IF NOT WORKING!!! -->
                 <input type="submit" name = "login-submit" class = "login-submit" value = "LOGIN" >
@@ -102,10 +98,7 @@
 
                 </div>
         </div>
-        <div class="sign-in-btns">
-            <button type = "button" class="prev-btn">Back</button>
-            <button type = "button" class="next-btn" disabled>Next</button>
-        </div>
+  
     </div>
 
     <form class = "tutor-form container" action="../end-users/home.php" method = "POST">

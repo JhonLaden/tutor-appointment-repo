@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2024 at 08:57 AM
+-- Generation Time: Mar 12, 2024 at 02:43 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -39,18 +39,6 @@ CREATE TABLE `learner` (
   `age` int(11) NOT NULL,
   `type` varchar(255) NOT NULL DEFAULT 'learner'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `learner`
---
-
-INSERT INTO `learner` (`id`, `username`, `password`, `firstname`, `middlename`, `lastname`, `phone`, `address`, `age`, `type`) VALUES
-(1, 'qwe', '123', 'Jhon Ladenm', 'bayle ', 'Francisco', 123312, 'Recodo purok 7-A zamboanga city', 14, 'learner'),
-(2, 'asf', 'sfsdf', 'asdfsad', 'sadf', 'sfsfd', 123312, 'Recodo purok 7-A zamboanga city', 20, 'learner'),
-(3, 'asf', 'asdfsd', 'asdfsad', 'sadf', 'sfsfd', 123312, 'Recodo purok 7-A zamboanga city', 20, 'learner'),
-(4, 'hello', 'asdfsd', 'asdffsd', 'sf', 'sfsd', 2147483647, 'Recodo purok 7-A zamboanga city', 21, 'learner'),
-(5, 'hello', '123', 'asdffsd', 'sf', 'sfsd', 2147483647, 'Recodo purok 7-A zamboanga city', 21, 'learner'),
-(6, 'hello', '123', 'asdffsd', 'sf', 'sfsd', 2147483647, 'Recodo purok 7-A zamboanga city', 21, 'learner');
 
 -- --------------------------------------------------------
 
@@ -112,13 +100,7 @@ CREATE TABLE `tutor` (
 --
 
 INSERT INTO `tutor` (`id`, `username`, `password`, `firstname`, `middlename`, `lastname`, `phone`, `address`, `age`, `type`) VALUES
-(103, 'aaa', 'asdfsd', 'asdfsd', 'asdf', 'asdf', 123, 'Recodo purok 7-A zamboanga city', 20, 'tutor'),
-(104, 'aaa', 'asdfdsf', 'asdfsd', 'asdf', 'asdf', 123, 'Recodo purok 7-A zamboanga city', 20, 'tutor'),
-(105, 'aaa', 'sfa', 'asdfsd', 'asdf', 'asdf', 123, 'Recodo purok 7-A zamboanga city', 20, 'tutor'),
-(106, 'aaa', 'asdf', 'asdfsd', 'asdf', 'asdf', 123, 'Recodo purok 7-A zamboanga city', 20, 'tutor'),
-(107, 'aaa', 'asdf', 'asdfsd', 'asdf', 'asdf', 123, 'Recodo purok 7-A zamboanga city', 20, 'tutor'),
-(108, 'aaa', 'sadfsfd', 'asdfsd', 'asdf', 'asdf', 123, 'Recodo purok 7-A zamboanga city', 20, 'tutor'),
-(109, 'asdf', 'asdfsd', 'asdfas', 'asdf', 'asdfa', 2147483647, 'asdf', 20, 'tutor');
+(111, 'hello', '123', 'Jhon Laden', 'asd', 'bandahala', 2147483647, 'Recodo purok 7-A zamboanga city', 20, 'tutor');
 
 -- --------------------------------------------------------
 
@@ -144,9 +126,7 @@ CREATE TABLE `tutor_profile` (
 --
 
 INSERT INTO `tutor_profile` (`id`, `id_fk`, `subjects`, `experience`, `education`, `services`, `location`, `base`, `fee`, `rating`) VALUES
-(18, 107, '', '', '', '', '', '', '', 0),
-(19, 108, '', '', '', '', '', '', '', 0),
-(20, 109, '', '', '', '', '', '', '', 0);
+(22, 111, '', '', '', '', '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -161,14 +141,6 @@ CREATE TABLE `tutor_wall` (
   `description` varchar(255) NOT NULL,
   `rate` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tutor_wall`
---
-
-INSERT INTO `tutor_wall` (`id`, `tutor_id`, `rating`, `description`, `rate`) VALUES
-(1, 103, 4, 'Lorem ipsum dolor sit amet, sf adipisicing elit. Sed deserunt, sapiente aspernatur ducimus eos atque sadfsadf', 299),
-(2, 103, 2, 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum architecto aliquam sequi nemo corr...\r\n\r\n', 299);
 
 --
 -- Indexes for dumped tables
@@ -223,7 +195,7 @@ ALTER TABLE `tutor_wall`
 -- AUTO_INCREMENT for table `learner`
 --
 ALTER TABLE `learner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
@@ -235,25 +207,25 @@ ALTER TABLE `personal_info`
 -- AUTO_INCREMENT for table `schedule`
 --
 ALTER TABLE `schedule`
-  MODIFY `schedule_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `schedule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `tutor`
 --
 ALTER TABLE `tutor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 
 --
 -- AUTO_INCREMENT for table `tutor_profile`
 --
 ALTER TABLE `tutor_profile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tutor_wall`
 --
 ALTER TABLE `tutor_wall`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
