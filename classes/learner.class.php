@@ -15,10 +15,10 @@ class Learner{
     }
 
     function add_learner($username, $password, $firstname, $middlename, $lastname, $phone, $address, $age){
-        $sql = "INSERT INTO learner (username, password, firstname, middlename, lastname, phone, address, age )VALUES (:username, :password, :firstname, :middlename, :lastname, :phone, :address, :age)";
-
+        $sql = "INSERT INTO learner (username, password, firstname, middlename, lastname, phone, address, age) VALUES (:username, :password, :firstname, :middlename, :lastname, :phone, :address, :age)";
+    
         $query = $this->db->connect()->prepare($sql);
-
+    
         $query->bindParam(':username', $username);
         $query->bindParam(':password', $password);
         $query->bindParam(':firstname', $firstname);
@@ -27,6 +27,40 @@ class Learner{
         $query->bindParam(':phone', $phone);
         $query->bindParam(':address', $address);
         $query->bindParam(':age', $age);
+    
+        if($query->execute()){
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
+    function getLastInsertedlearnerId() {
+        $sql = "SELECT id FROM learner ORDER BY id DESC LIMIT 1";
+        $query = $this->db->connect()->prepare($sql);
+        $query->execute();
+    
+        // Fetch the result as an associative array
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+    
+        // Check if a row was returned
+        if ($result) {
+            // Retrieve the value of the 'id' column and return it
+            return $result['id'];
+        } else {
+            // If no rows found, return null or false, depending on your preference
+            return null;
+        }
+    }
+
+    function add_learner_profile($id){
+        $sql = "INSERT INTO learner_profile (id_fk)";
+
+        $query = $this->db->connect()->prepare($sql);
+
+        $query->bindParam(':id_fk', $id);
 
        
         if($query->execute()){
@@ -46,6 +80,8 @@ class Learner{
         return $data;
         
     }
+
+
     
 }
 

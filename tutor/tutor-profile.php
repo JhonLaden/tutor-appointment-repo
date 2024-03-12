@@ -88,7 +88,7 @@
                     <p class="location-p-container"><i class='bx bx-wallet'></i> ₱100 - ₱300/hr</p>
                     <?php
                         if(isset($_SESSION['logged-in']) && $_SESSION['logged-in']['type'] == 'learner'){?>
-                        <button class="appointment-btn">Make an appointment</button>   
+                        <button class="appointment-btn"><a href="../learner/appointment.php">Make an appointment</a></button>   
                     <?php
                         }
                     ?>

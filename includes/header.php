@@ -11,6 +11,9 @@
     <link rel = "stylesheet" href = "../css/login-form.css">
     <link rel = "stylesheet" href = "../css/collapse.css">
     <link rel = "stylesheet" href = "../css/tutor-sign-up.css">
+    <link rel = "stylesheet" href = "../css/learner-profile.css">
+    <link rel = "stylesheet" href = "../css/appointment.css">
+
 
     <!-- TESTING MODAL -->
     <link rel = "stylesheet" href = "../css/modal.css">
@@ -35,12 +38,10 @@
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
 
                     <?php 
-                        
                         if(isset($_SESSION['logged-in'])){
                             if($_SESSION['logged-in']['type'] == 'learner'){
                             ?>
-                            
-                            <button class= " "><?php echo $_SESSION['logged-in']['username'];?></button>
+                            <button class= " "><a href="../learner/learner-profile.php"><?php echo $_SESSION['logged-in']['username'];?></a></button>
                             <button class= ""> <a href="../includes/logout.php">Logout</a></button>
                         <?php
                             }else{?>
@@ -48,7 +49,6 @@
                                 <button class= ""> <a href="../includes/logout.php">Logout</a></button>
                             <?php
                             }
-                  
                         }else{
                     ?>
                         <button class= "log-in join">Login</button>

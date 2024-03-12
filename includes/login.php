@@ -97,14 +97,9 @@
                     <div class="radio-container">
                         <img src="../images/other/learner.png" alt="">
                         <input class = "learner-radio type-radio" type="radio" id="learner" name="type" value="learner">
-                        <label class = "learner-label type-label" for="learner">Learner</label>
+                        <a href = "../end-users/learner-sign-up.php" >Learner</a>
                     </div>  
 
-                    <div class="radio-container">
-                        <img src="../images/other/guardian.png" alt="">
-                        <input class = "guardian-radio type-radio" type="radio" id="guardian" name="type" value="guardian">
-                        <label class = "guardian-label type-label" for="guardian">Guardian</label>
-                    </div>  
                 </div>
         </div>
         <div class="sign-in-btns">
