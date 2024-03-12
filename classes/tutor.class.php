@@ -82,6 +82,19 @@ class Tutor{
     }
 
 
+    function show_tutors(){
+        $sql = "SELECT tutor.*, tutor_wall.* 
+                FROM tutor 
+                INNER JOIN tutor_wall ON tutor.id = tutor_wall.tutor_id";
+        $query = $this->db->connect()->prepare($sql);
+        
+        $data = []; // Initialize an empty array to store the fetched data
+        
+        if($query->execute()){
+            $data = $query->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $data; // Return the combined data from both tables
+    }
     
 }
 

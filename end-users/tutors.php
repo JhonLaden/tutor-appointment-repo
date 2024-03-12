@@ -112,16 +112,25 @@
     <p class="container t-color">63,449 services available</p>
     
     <div class="container grid-container">
-        <a class="grid-item" href = "../tutor/tutor-profile.php">
+
+    <?php
+        require_once '../classes/tutor.class.php';
+        $tutor = new Tutor();
+
+        $accounts = $tutor->show_tutors();
+
+        foreach($accounts as $keys => $value){ 
+        ?>
+        <a class="grid-item" href = "../tutor/tutor-profile.php?tutor_id=<?php echo $value['tutor_id']; ?>">
             <div class="img-preview">
-                <img class = "wall-img" src="../images/grid/wall/wall1.png" alt="wall1">
+                <img class = "wall-img" src="../images/tutor-wall.jpg" alt="wall1">
             </div>
             <div class="information">
                 <div class="profile">
-                    <img class = "profile-img" src="../images/grid/profile/profile1.jpeg" alt="profile1" class="profile-img">
+                    <img class = "profile-img" src="../images/tutor-profile.png" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name">stylishwebs</div>
+                            <div class="profile-name"><?php echo $value['username']?></div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">
@@ -131,18 +140,24 @@
                     </div>
                 </div>
                 <div class="detail-pay-rate-wrapper">
-                    <p class="details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum architecto aliquam sequi nemo corrupti consequatur exercitationem totam soluta delectus id.</p>
+                    <p class="details"><?php echo $value['description']?></p>
                     <div class="rating-pay-rate">
                         <div class="pay-rate">
                         <p>Pay rate at </p>
-                        <h2>₱ 200.00</h2>
+                        <h2>₱ <?php echo $value['rate']?></h2>
                     </div>
                     </div>
                 </div>
             </div>
         </a>
+    <?php
+        }
+
+    ?>
+
+        
        
-        <a class="grid-item" href = "#">
+        <!-- <a class="grid-item" href = "#">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall2.png" alt="wall1">
 
@@ -173,9 +188,9 @@
                 </div>
                 </div>
             </div>
-        </a>
+        </a> -->
 
-        <a class="grid-item" href = "#">
+        <!-- <a class="grid-item" href = "#">
             <div class="img-preview">
                 <img class = "wall-img" src="../images/grid/wall/wall3.jpg" alt="wall1">
             </div>
@@ -356,7 +371,7 @@
                     </div>
                 </div>
             </div>
-        </a>  
+        </a>   -->
         
         
         

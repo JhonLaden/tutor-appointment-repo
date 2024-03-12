@@ -81,6 +81,21 @@ class Learner{
         
     }
 
+    function getScheduleData(){
+        $sql = "SELECT schedule.*, tutor.*, learner.*
+                FROM schedule
+                INNER JOIN tutor ON schedule.tutor_id = tutor.id
+                INNER JOIN learner ON schedule.learner_id = learner.id";
+        $query = $this->db->connect()->prepare($sql);
+        
+        $data = []; // Initialize an empty array to store the fetched data
+        
+        if($query->execute()){
+            $data = $query->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $data; // Return the combined data from all three tables
+    }
+
 
     
 }

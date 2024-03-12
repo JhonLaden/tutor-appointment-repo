@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2024 at 04:45 AM
+-- Generation Time: Mar 12, 2024 at 08:57 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -73,6 +73,24 @@ CREATE TABLE `personal_info` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `schedule`
+--
+
+CREATE TABLE `schedule` (
+  `schedule_id` int(11) NOT NULL,
+  `tutor_id` int(11) NOT NULL,
+  `learner_id` int(11) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
+  `fee` int(11) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `date_created` varchar(255) NOT NULL DEFAULT current_timestamp(),
+  `date_updated` varchar(255) NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tutor`
 --
 
@@ -130,6 +148,28 @@ INSERT INTO `tutor_profile` (`id`, `id_fk`, `subjects`, `experience`, `education
 (19, 108, '', '', '', '', '', '', '', 0),
 (20, 109, '', '', '', '', '', '', '', 0);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tutor_wall`
+--
+
+CREATE TABLE `tutor_wall` (
+  `id` int(11) NOT NULL,
+  `tutor_id` int(11) NOT NULL,
+  `rating` int(11) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `rate` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tutor_wall`
+--
+
+INSERT INTO `tutor_wall` (`id`, `tutor_id`, `rating`, `description`, `rate`) VALUES
+(1, 103, 4, 'Lorem ipsum dolor sit amet, sf adipisicing elit. Sed deserunt, sapiente aspernatur ducimus eos atque sadfsadf', 299),
+(2, 103, 2, 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum architecto aliquam sequi nemo corr...\r\n\r\n', 299);
+
 --
 -- Indexes for dumped tables
 --
@@ -148,6 +188,14 @@ ALTER TABLE `personal_info`
   ADD KEY `tutor_id` (`tutor_id`);
 
 --
+-- Indexes for table `schedule`
+--
+ALTER TABLE `schedule`
+  ADD PRIMARY KEY (`schedule_id`),
+  ADD KEY `tutor_id` (`tutor_id`),
+  ADD KEY `learner_id` (`learner_id`);
+
+--
 -- Indexes for table `tutor`
 --
 ALTER TABLE `tutor`
@@ -159,6 +207,13 @@ ALTER TABLE `tutor`
 ALTER TABLE `tutor_profile`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tutor_id_fk` (`id_fk`);
+
+--
+-- Indexes for table `tutor_wall`
+--
+ALTER TABLE `tutor_wall`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `tutor_id` (`tutor_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -177,6 +232,12 @@ ALTER TABLE `personal_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `schedule`
+--
+ALTER TABLE `schedule`
+  MODIFY `schedule_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tutor`
 --
 ALTER TABLE `tutor`
@@ -189,6 +250,12 @@ ALTER TABLE `tutor_profile`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
+-- AUTO_INCREMENT for table `tutor_wall`
+--
+ALTER TABLE `tutor_wall`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- Constraints for dumped tables
 --
 
@@ -199,10 +266,23 @@ ALTER TABLE `personal_info`
   ADD CONSTRAINT `personal_info_ibfk_1` FOREIGN KEY (`tutor_id`) REFERENCES `tutor` (`id`);
 
 --
+-- Constraints for table `schedule`
+--
+ALTER TABLE `schedule`
+  ADD CONSTRAINT `schedule_ibfk_1` FOREIGN KEY (`tutor_id`) REFERENCES `tutor` (`id`),
+  ADD CONSTRAINT `schedule_ibfk_2` FOREIGN KEY (`learner_id`) REFERENCES `learner` (`id`);
+
+--
 -- Constraints for table `tutor_profile`
 --
 ALTER TABLE `tutor_profile`
   ADD CONSTRAINT `fk_tutor_profile_tutor_id` FOREIGN KEY (`id_fk`) REFERENCES `tutor` (`id`);
+
+--
+-- Constraints for table `tutor_wall`
+--
+ALTER TABLE `tutor_wall`
+  ADD CONSTRAINT `tutor_wall_ibfk_1` FOREIGN KEY (`tutor_id`) REFERENCES `tutor` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

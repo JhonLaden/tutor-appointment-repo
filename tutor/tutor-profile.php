@@ -87,8 +87,14 @@
                     <p class="location-p-container"><i class='bx bx-desktop' ></i> Online/Homebase</p>
                     <p class="location-p-container"><i class='bx bx-wallet'></i> ₱100 - ₱300/hr</p>
                     <?php
-                        if(isset($_SESSION['logged-in']) && $_SESSION['logged-in']['type'] == 'learner'){?>
-                        <button class="appointment-btn"><a href="../learner/appointment.php">Make an appointment</a></button>   
+                        if(isset($_SESSION['logged-in']) && $_SESSION['logged-in']['type'] == 'learner'){
+                            if(isset($_GET['tutor_id'])){?>
+                                <button class="appointment-btn"><a href="../learner/appointment.php?tutor_id=<?php echo $_GET['tutor_id'] ?>">Make an appointment</a></button>
+                            <?php   
+                            }
+                            ?>
+                            
+                            
                     <?php
                         }
                     ?>

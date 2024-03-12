@@ -32,7 +32,6 @@
                 </label>
                 <ul class = "navbar h-text navbar-collapse" >
                     <li class = "nav-item"><a class = "nav-link <?php echo $home; ?>" href="../end-users/home.php">HOME</a></li>
-                    <li class = "nav-item"><a class = "nav-link <?php echo $features; ?>" href="#">FEATURES</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $tutors; ?>" href="../end-users/tutors.php">TUTORS</a></li>
                     <li  id = "about-link" class = "nav-item" ><a  class = "nav-link" href="#about">ABOUT US</a></li>
                     <li class = "nav-item"><a class = "nav-link <?php echo $faqs; ?>" href="../end-users/faqs.php">FAQs</a></li>
