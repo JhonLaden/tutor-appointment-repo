@@ -2,7 +2,7 @@
     session_start();
     require_once "../variables/nav.php";
     $home = "active";
-    $title = 'TutourOnline | Home';
+    $title = 'TutourOnline | tutor sign up';
     require_once "../includes/header.php";
     require_once "../classes/learner.class.php";
     require_once "../tools/functions.php";
