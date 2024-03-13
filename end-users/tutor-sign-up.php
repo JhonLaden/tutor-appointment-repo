@@ -38,7 +38,7 @@
             }
     
             if($isTutorProfileAdded) {
-                header('location: ../tutor/tutor-profile?tutor_id='.$_SESSION['logged-in']['id'].'.php');
+                header('location: ../tutor/tutor-profile.php?tutor_id='.$_SESSION['logged-in']['id']);
             }
         }
     }
@@ -60,7 +60,6 @@
                 <h2 class="account-details-header">Accout Details</h2>
                 <input type="text" id = "username" name = "username" placeholder = "Username" required>
                 <input type="password" id = "password" name = "password" placeholder = "Password" required>
-                
             </div>
             <div class="personal-information-container single-form">
                 <h2 class="personal-information-header">Personal Information</h2>

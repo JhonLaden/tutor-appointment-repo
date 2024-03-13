@@ -25,7 +25,7 @@
                 break;
             }
         }
-        header('location: ../learner/learner-profile?learner_id='.$_SESSION['logged-in']['id'].'.php');
+        header('location: ../learner/learner-profile.php?learner_id='.$_SESSION['logged-in']['id']);
     
         // if($islearnerAdded) {
         //     // Insert learner profile with learner ID as foreign key
