@@ -18,15 +18,19 @@
         if($isTutorAdded) {
             // Insert tutor profile with tutor ID as foreign key
             require_once "../classes/tutor_profile.class.php";
+            require_once "../classes/tutor_wall.class.php";
+
             $tutorProfile = new Tutor_profile();
+            $tutorWall = new Tutor_Wall();
     
             // Insert tutor profile with tutor ID as foreign key
             $isTutorProfileAdded = $tutorProfile->add_tutor_profile($tutor->getLastInsertedTutorId());
+            $isTutorWallAdded = $tutorWall->add_tutorWall($tutor->getLastInsertedTutorId());
 
             $accounts = $tutor->show();
 
             foreach($accounts as $keys => $value){
-                
+
                 if($tutor->getLastInsertedTutorId() == $value['id'] ){
                     //if match then save username, fullname and type as session to be reused somewhere else
                     $_SESSION['logged-in'] = $value;
