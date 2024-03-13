@@ -6,6 +6,13 @@
     require_once "../includes/header.php";
     require_once "../includes/login.php";
 
+    require_once "../classes/tutor.class.php";
+
+    $tutor = new Tutor();
+    $current_tutor = null;
+    
+    $account = $tutor->show_with_id($_GET['tutor_id']);
+
 ?>
 
  
@@ -13,10 +20,10 @@
         <div class="profiling container">
             <div class="profile-main">
                 <div class="profile-main-head">
-                    <img src="../images/grid/profile/mine.jpg" alt="profile" class="profile-img">
+                    <img src="../images/tutor-profile.png" alt="profile" class="profile-img">
                     <div class="profile-name-description">
                         <div class="profile-name">
-                            <h2>Jhon Laden</h2>
+                            <h2><?php echo $account[0]['firstname'] . ' ' . $account[0]['middlename'] . ' ' . $account[0]['lastname']; ?></h2>
                             <div class="circle"></div>
                             <p>available</p>
                         </div>
@@ -103,6 +110,14 @@
                     <p class="profile-details-header">Rating Breakdown</p>
                     <p class="reviews">(15) Reviews <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i> 4.8</p>
                 </div>
+                <?php
+                    if($_SESSION['logged-in']['id'] == $_GET['tutor_id']){  ?> 
+                        <div class="scheduling-container">
+                            <a href="tutor-schedule.php?<?php $_SESSION['logged-in']['id']?>">visit schedule</a>
+                        </div>
+                <?php    }
+                ?>
+                
             </div>
         </div>
     </main>

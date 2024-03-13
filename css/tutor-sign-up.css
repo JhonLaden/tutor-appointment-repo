@@ -1,6 +1,8 @@
 .sign-up-container{
-   padding-bottom: 200px;
-
+   padding: 3.5em 5%;
+   background-color: orange;
+   justify-content: space-around;
+   
 }
 
 
@@ -8,9 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5rem;
-   background-color: var(--h-text);
-
+    padding: 2em 2em;
 }
 
 .sign-up-container .sign-up-header .description{
@@ -21,8 +21,10 @@
 }
 .sign-up-container .sign-up-header .description{
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
+
+
 
 .sign-up-container .img-container{
     display: flex;
@@ -32,20 +34,44 @@
 }
 
 .sign-up-container .img-container img{
-    max-height: 100%;
-    width: 100%;
+    max-width: 500px;
+    width: 200px;
 }
 
 .sign-up-container .img-container p strong{
     font-size: 1.5rem;
     font-weight: bolder;
-    color: orange;
+    color: #fff;
     text-transform: uppercase;
 }
 
-p.sample{
-    height: 1000px;
-    background-color: red;
+.sign-up-container .form-container{
+    padding: 0em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-container .form-container .single-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.sign-up-container .form-container .account-details-container .account-details-header{
+    text-align: center;
+}
+
+.sign-up-container .form-container .signup-btn{
+    cursor: pointer;
+}
+
+.sign-up-container .form-container input{
+    width: 400px;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 @media(min-width: 750px){
@@ -57,4 +83,18 @@ p.sample{
         font-size: 1.5rem;
     }
 }
+
+
+
+@media(min-width: 1080px){
+    .sign-up-container{
+        display: flex;
+     
+     }
+     
+    .sign-up-container .sign-up-header, .sign-up-container .form-container{
+        width: 40%;
+    }
+}
+
 

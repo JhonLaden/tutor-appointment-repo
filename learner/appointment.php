@@ -7,7 +7,7 @@
 
     $current_page = 'appointment.php';
     // Ensure no output is sent before this point
-    if(isset($_POST['submit-sched'])){
+     if(isset($_POST['submit-sched'])){
         require_once '../classes/tutor.class.php';
         require_once '../classes/schedule.class.php';
 
@@ -36,7 +36,7 @@
 
         // Add schedule
         $isAppointed = $schedule->add_schedule($tutorID, $_SESSION['logged-in']['id'], $date, $time, $tutorRate, 'Pending');
-
+        
         
     }
     if($isAppointed){

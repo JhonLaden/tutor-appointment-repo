@@ -1,4 +1,6 @@
 <?php
+
+    session_start();
     require_once "../variables/nav.php";
     $faqs = "active";
     $title = 'TutourOnline | FAQs';
@@ -8,7 +10,6 @@
 ?>
 
     <main>
-    <br>
         <div class=" wall wall-bg-home">
             <div class="container container-wall fluid-height">
                 <div class="wall-body container-wall">

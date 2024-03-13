@@ -38,7 +38,7 @@
             }
     
             if($isTutorProfileAdded) {
-                header('location: ../tutor/tutor-profile.php');
+                header('location: ../tutor/tutor-profile?tutor_id='.$_SESSION['logged-in']['id'].'.php');
             }
         }
     }
@@ -55,23 +55,23 @@
             </p>
         </div>
 
-        <form action="tutor-sign-up.php" method = "post" class="form-container">
-            <div class="account-details-container">
+        <form class = "form-container"action="tutor-sign-up.php" method = "post" class="form-container">
+            <div class="account-details-container single-form">
                 <h2 class="account-details-header">Accout Details</h2>
-                <input type="text" id = "username" name = "username" placeholder = "username" required>
-                <input type="password" id = "password" name = "password" placeholder = "password" required>
+                <input type="text" id = "username" name = "username" placeholder = "Username" required>
+                <input type="password" id = "password" name = "password" placeholder = "Password" required>
                 
             </div>
-            <div class="personal-information-container">
+            <div class="personal-information-container single-form">
                 <h2 class="personal-information-header">Personal Information</h2>
-                <input type="text" id = "firstname" name = "firstname" placeholder = "firstname" required>
-                <input type="text" id = "middlename" name = "middlename" placeholder = "middlename">
-                <input type="text" id = "lastname" name = "lastname" placeholder = "lastname" required>
-                <input type="tel" id = "phone" name = "phone" placeholder = "phone" required>
-                <input type="text" id = "address" name = "address" placeholder = "address" required>
-                <input type="number" id = "age" name = "age" placeholder = "age" required>
+                <input type="text" id = "firstname" name = "firstname" placeholder = "First Name" required>
+                <input type="text" id = "middlename" name = "middlename" placeholder = "Middle Name">
+                <input type="text" id = "lastname" name = "lastname" placeholder = "Last Name" required>
+                <input type="number" id = "phone" name = "phone" placeholder = "Phone number" required>
+                <input type="text" id = "address" name = "address" placeholder = "Address" required>
+                <input type="number" id = "age" name = "age" placeholder = "Age" required>
             </div>
-            <input type="submit" name = "submit">
+            <input class = "signup-btn" type="submit" name = "submit" value = "Sign up">
             <?php 
 
             ?>

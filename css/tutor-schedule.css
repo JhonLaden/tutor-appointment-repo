@@ -1,4 +1,4 @@
-.record-container{
+.schedule-container{
     height: 100%;
     min-height: 500px;
     max-height: 1000px;
@@ -6,11 +6,11 @@
     margin-bottom: 5em;
 }
 
-.record-container table {
+.schedule-container table {
     width: 100%;
     border-collapse: collapse;
 }
-.record-container th, td {
+.schedule-container th, td {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
@@ -20,29 +20,29 @@ td.pending, td.cancelled, td.confirm{
     font-weight: bolder;
 }
 
-.record-container td.confirm{
+.schedule-container td.confirm{
     color: green;
 }
-.record-container td.pending{
+.schedule-container td.pending{
     color: var(--sea);
 }
-.record-container td.cancelled{
+.schedule-container td.cancelled{
     color: crimson;
 }
 
-.record-container th {
+.schedule-container th {
     background-color: #f2f2f2;
 }
-.record-container tr td.action a{
+.schedule-container tr td.action a{
     padding: 0.5em 1em;
     border-radius: 5px;
 }
 
-.record-container td.action a.edit{
+.schedule-container td.action a.edit{
     background-color: var(--sea);;
 }
 
-.record-container td.action a.cancel:hover{
+.schedule-container td.action a.cancel:hover{
     background-color: crimson;
     color: #fff;
     transition: all 0.5s;

@@ -13,6 +13,8 @@
     <link rel = "stylesheet" href = "../css/tutor-sign-up.css">
     <link rel = "stylesheet" href = "../css/learner-profile.css">
     <link rel = "stylesheet" href = "../css/appointment.css">
+    <link rel = "stylesheet" href = "../css/tutor-schedule.css">
+
 
 
     <!-- TESTING MODAL -->
@@ -40,11 +42,11 @@
                         if(isset($_SESSION['logged-in'])){
                             if($_SESSION['logged-in']['type'] == 'learner'){
                             ?>
-                            <button class= " "><a href="../learner/learner-profile.php"><?php echo $_SESSION['logged-in']['username'];?></a></button>
+                            <button class= " "><a href="../learner/learner-profile.php?learner_id=<?php echo $_SESSION['logged-in']['id']?>"><?php echo $_SESSION['logged-in']['username'];?></a></button>
                             <button class= ""> <a href="../includes/logout.php">Logout</a></button>
                         <?php
                             }else{?>
-                                <button class= ""><a href="../tutor/tutor-profile.php"><?php echo $_SESSION['logged-in']['username'];?></a></button>
+                                <button class= ""><a href="../tutor/tutor-profile.php?tutor_id=<?php echo $_SESSION['logged-in']['id']?>"><?php echo $_SESSION['logged-in']['username'];?></a></button>
                                 <button class= ""> <a href="../includes/logout.php">Logout</a></button>
                             <?php
                             }

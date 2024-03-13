@@ -150,6 +150,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%
 }
 
 .form-login .sign-in .sign-in-preview .sign-in-header{
@@ -176,7 +177,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
+}
+
+.form-login .sign-in .sign-in-preview .form-type-radio a.type-btn{
+    padding: 0.5em 1em;
+    background-color: var(--h-text);
+    color: #fff;
+    border-radius: 5px;
 }
 
 .form-login .sign-in .sign-in-btns{
@@ -214,7 +223,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     margin-bottom: 1em;
 }
 

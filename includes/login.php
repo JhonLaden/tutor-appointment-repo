@@ -18,7 +18,7 @@ if (isset($_POST['un']) && isset($_POST['pw'])) {
             //if match then save username, fullname and type as session to be reused somewhere else
             $_SESSION['logged-in'] = $value;
 
-            header('Location: ../tutor/tutor-profile.php');
+            header('Location: ../tutor/tutor-profile.php?tutor_id='.$_SESSION['logged-in']['id']);
             exit; // Important to terminate script execution after redirection
         }
     }
@@ -30,7 +30,7 @@ if (isset($_POST['un']) && isset($_POST['pw'])) {
             //if match then save username, fullname and type as session to be reused somewhere else
             $_SESSION['logged-in'] = $value;
 
-            header('Location: ../end-users/tutors.php');
+            header('Location: ../end-users/tutors.php?learner_id='.$_SESSION['logged-in']['id']);
             exit; // Important to terminate script execution after redirection
         }
     }
@@ -40,7 +40,7 @@ if (isset($_POST['un']) && isset($_POST['pw'])) {
 <!-- HTML content starts here -->
 <div class="disabled-bg"></div>
 <div class="form-login">
-    <i class='bx bx-x form-login-x-btn'></i>
+    <a href="#" onclick="window.location.reload();"><i class='bx bx-x form-login-x-btn'></i></a>
     <div class="login-main container">
         <div class="login-main-preview">
             <div class="login-header">
@@ -56,8 +56,6 @@ if (isset($_POST['un']) && isset($_POST['pw'])) {
                 <!-- test submit button  -->
                 <!-- DELETE THIS IF NOT WORKING!!! -->
                 <input type="submit" name = "login-submit" class = "login-submit" value = "LOGIN" >
-
-                
             </form>
 
             <p class="forgot-password">Forgot Password?</p>
@@ -87,13 +85,13 @@ if (isset($_POST['un']) && isset($_POST['pw'])) {
                     <div class="radio-container">
                         <img src="../images/other/tutor.png" alt="">
                         <input class = "tutor-radio type-radio" type="radio" id="tutor" name="type" value="tutor">
-                        <a href = "../end-users/tutor-sign-up.php" >Tutor</a>
+                        <a class = "type-btn" href = "../end-users/tutor-sign-up.php" >Tutor</a>
                     </div>
 
                     <div class="radio-container">
                         <img src="../images/other/learner.png" alt="">
                         <input class = "learner-radio type-radio" type="radio" id="learner" name="type" value="learner">
-                        <a href = "../end-users/learner-sign-up.php" >Learner</a>
+                        <a class = "type-btn" href = "../end-users/learner-sign-up.php" >Learner</a>
                     </div>  
 
                 </div>

@@ -78,7 +78,17 @@ class Tutor{
             $data = $query->fetchAll();
         }
         return $data;
-        
+    }
+
+    function show_with_id($id){
+        $sql = "SELECT * FROM tutor WHERE id = :id";
+        $query = $this->db->connect()->prepare($sql);
+        $query->bindParam(':id', $id, PDO::PARAM_INT);
+        $data = array(); // Initialize an array to store the fetched data
+        if($query->execute()){
+            $data = $query->fetchAll();
+        }
+        return $data;
     }
 
 

@@ -5,13 +5,22 @@
     $title = 'TutourOnline | Profile';
     require_once "../includes/header.php";
     require_once "../includes/login.php";
+    require_once "../classes/schedule.class.php";
 
-    if(isset($_GET['schedule_id'])){
-        require_once '../classes/schedule.class.php';
+    $schedule = new Schedule();
+
+    if(isset($_GET['confirm_id'])){
+        $scheduleID = $_GET['confirm_id'];
+        var_dump($scheduleID);
     
-        $scheduleID = $_GET['schedule_id'];
-        $schedule = new Schedule();
-    
+        // Assuming $schedule is an instance of your class
+        $schedule->update_status_to_confirm($scheduleID);
+        
+        // Clear the $_GET parameter after processing
+        unset($_GET['confirm_id']);
+    }else if(isset($_GET['cancelled_id'])){
+        $scheduleID = $_GET['cancelled_id'];  
+
         $schedule->cancel_schedule($scheduleID);
     
         // Clear $_GET array
@@ -20,7 +29,7 @@
 ?>
     <main> 
     
-        <div class="record-container container">
+        <div class="schedule-container container">
         <table>
     <thead>
         <tr>
@@ -39,7 +48,7 @@
     require_once '../classes/schedule.class.php';
     $schedule = new Schedule();
 
-    $accounts = $schedule->show_with_id($_SESSION['logged-in']['id']);
+    $accounts = $schedule->show_with_tutor_id($_SESSION['logged-in']['id']);
 
     if(empty($accounts)){
         
@@ -57,6 +66,7 @@
                 <td><?php echo $value['date']?></td> <!-- Placeholder for Date -->
                 <td><?php echo $value['time']?></td></td> <!-- Placeholder for Time -->
                 <td><?php echo $value['fee']?></td></td> <!-- Placeholder for Fee -->
+
                 <td <?php if ($value['status'] == 'Pending'): ?>
                     class="pending"
                 <?php elseif ($value['status'] == 'Confirm'): ?>
@@ -64,12 +74,13 @@
                 <?php else: ?>
                     class="cancelled"
                 <?php endif; ?>><?php echo $value['status']?></td> <!-- Placeholder for Status -->
+
                 <td class="action">
                     <?php 
                         if($value['status'] == 'Pending'){
                     ?>
-                            <a class = "edit" href="edit-appointment.php?schedule_id=<?php echo $value['schedule_id']?>">Edit</a>
-                            <a class = "cancel" href="learner-profile.php?schedule_id=<?php echo $value['schedule_id']?>">Cancel</a>
+                            <a class = "confirm" href="tutor-schedule.php?confirm_id=<?php echo $value['schedule_id']?>">Confirm</a>
+                            <a class = "cancel" href="tutor-schedule.php?cancelled_id=<?php echo $value['schedule_id']?>">Cancel</a>
                     <?php
                         }else{
                         ?>

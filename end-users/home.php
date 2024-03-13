@@ -24,7 +24,7 @@
 
         <div class="container">
             <div class="pic-description">
-                <img class = "pic" src="../images/tutor-pic-4.jpg" alt="pic4">
+                <img class = "pic" src="../images/home/homepic.jpg" alt="pic4">
                 <div class="description">
                     <h2 class="title">Our Tutoring Services</h2>
                     <p >
@@ -42,7 +42,7 @@
         
         <div class="container">
             <div class="pic-description reversed">
-                <img class = "pic" src="../images/tutor-pic-1.png" alt="pic1">
+                <img class = "pic" src="../images/home/homepic2.jpg" alt="pic1">
                 <div class="description">
                     <h2 class="title">Tutors provide</h2>
                     <p>
@@ -61,7 +61,7 @@
 
         <div class="container">
             <div class="pic-description">
-                <img class = "pic" src="../images/tutor-pic-2.jpg" alt="pic2">
+                <img class = "pic" src="../images/home/homepic3.jpg" alt="pic2">
                 <div class="description">
                     <h2 class="title">As a student , Why should I hire tutor?</h2>
                     <p >
@@ -74,7 +74,7 @@
 
         <div class="container">
             <div class="pic-description reversed">
-                <img class = "pic" src="../images/tutor-pic-3.jpeg" alt="pic3">
+                <img class = "pic" src="../images/home/homepic4.jpg" alt="pic3">
                 <div class="description">
                     <h2 class="title">As a parent, what do I need to know?</h2>
                     <p>
