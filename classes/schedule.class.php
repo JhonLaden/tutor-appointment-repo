@@ -59,7 +59,8 @@ class Schedule{
         $sql = "SELECT schedule.*, tutor.firstname AS tutor_firstname, learner.firstname AS learner_firstname
                 FROM schedule 
                 INNER JOIN tutor ON schedule.tutor_id = tutor.id
-                INNER JOIN learner ON schedule.learner_id = learner.id;";
+                INNER JOIN learner ON schedule.learner_id = learner.id
+                ORDER BY schedule.date_created DESC"; // Sort by date_created in descending order
         $query = $this->db->connect()->prepare($sql);
         $data = array(); // Initialize an array to store the fetched data
         if($query->execute()){
@@ -68,6 +69,18 @@ class Schedule{
         return $data;
     }
 
+    function cancel_schedule($scheduleID){
+        $sql = "UPDATE schedule SET status = 'Cancelled' WHERE schedule_id = :schedule_id";
+        $query = $this->db->connect()->prepare($sql);
+        $query->bindParam(':schedule_id', $scheduleID, PDO::PARAM_INT);
+        
+        // Execute the query
+        if($query->execute()){
+            return true; // Update successful
+        } else {
+            return false; // Update failed
+        }
+    }
 
     
 }

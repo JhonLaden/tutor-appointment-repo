@@ -35,7 +35,7 @@
         }
 
         // Add schedule
-        $isAppointed = $schedule->add_schedule($tutorID, $_SESSION['logged-in']['id'], $date, $time, $tutorRate, 'pending');
+        $isAppointed = $schedule->add_schedule($tutorID, $_SESSION['logged-in']['id'], $date, $time, $tutorRate, 'Pending');
 
         
     }

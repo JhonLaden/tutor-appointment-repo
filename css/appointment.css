@@ -20,3 +20,8 @@
 .appointment-container .form-container .input-container input{
     width: 100%;
 }
+
+tr.empty-record td {
+    text-align: center;
+    height: 100%;
+}

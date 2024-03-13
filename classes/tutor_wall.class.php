@@ -8,7 +8,7 @@ class Tutor_Wall{
     protected $db ;
     protected $rating = 1;
     protected $description = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus suscipit delectus pariatur quod laudantium cum iure amet ab nam excepturi?';
-    protected $rate = 0;
+    protected $rate = 299;
 
 
     function __construct(){
