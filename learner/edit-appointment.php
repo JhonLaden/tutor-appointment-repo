@@ -20,7 +20,6 @@
         
         header('location: learner-profile.php');
     }
-
     require_once "../includes/login.php";
 
 ?>

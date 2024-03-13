@@ -129,7 +129,7 @@ class Schedule{
             $sql = "UPDATE schedule 
                     SET date = :date, 
                         time = :time
-                    WHERE id = :schedule_id";
+                    WHERE schedule_id = :schedule_id";
             
             $query = $this->db->connect()->prepare($sql);
             

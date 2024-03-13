@@ -131,7 +131,7 @@
                     <img class = "profile-img" src="../images/tutor-profile.png" alt="profile1" class="profile-img">
                     <div class="flex-between">
                         <div class="profile-name-type">
-                            <div class="profile-name"><?php echo $value['username']?></div>
+                            <div class="profile-name"><?php echo $value['firstname']?></div>
                             <div class="profile-type">Tutor</div>
                         </div>
                         <div class="rating">

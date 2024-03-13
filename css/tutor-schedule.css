@@ -38,7 +38,7 @@ td.pending, td.cancelled, td.confirm{
     border-radius: 5px;
 }
 
-.schedule-container td.action a.edit{
+.schedule-container td.action a.confirm{
     background-color: var(--sea);;
 }
 
