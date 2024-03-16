@@ -81,12 +81,14 @@ class Tutor{
     }
 
     function show_with_id($id){
-        $sql = "SELECT * FROM tutor WHERE id = :id";
+        $sql = "SELECT tutor.*, tutor_profile.* FROM tutor 
+                INNER JOIN tutor_profile ON tutor.id = tutor_profile.id_fk 
+                WHERE tutor.id = :id";
         $query = $this->db->connect()->prepare($sql);
         $query->bindParam(':id', $id, PDO::PARAM_INT);
         $data = array(); // Initialize an array to store the fetched data
         if($query->execute()){
-            $data = $query->fetchAll();
+            $data = $query->fetchAll(PDO::FETCH_ASSOC); // Fetch data as associative array
         }
         return $data;
     }

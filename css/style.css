@@ -287,7 +287,6 @@ button{
 
 main{
     position: relative;
-    z-index: 0;
     top: 100px;
 }
 
@@ -741,11 +740,38 @@ footer h2{
     text-align: center;
 }
 
+
+.profiling .profile-main .profile-main-head .profile-name-description .edit-profile-modal .header-profile{
+    text-align: center;
+}
+
+.profiling .profile-main .profile-main-head .profile-name-description .edit-profile-modal .edit-profile .input-container .input-container-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
 .profile-main .profile-subjects-skills{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid black;
     margin-bottom: 1em;
+}
+
+.profile-main .profile-subjects-skills .add-subject{
+    display: none;
+}
+
+.profile-main .profile-subjects-skills .delete-subject{
+    display: none;
+    opacity: 0;
+}
+
+.profile-main .profile-subjects-skills .add-subject-display{
+    display: block;
 }
 
 
@@ -763,6 +789,15 @@ footer h2{
 .profile-main .profile-subjects-skills .subjects-skills-details .profile-subjects-skills-list{
     list-style-type: circle;
     list-style-position: inside;
+    
+}
+.profile-main .profile-subjects-skills .subjects-skills-details .profile-subjects-skills-list li{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.profile-main .profile-subjects-skills .subjects-skills-details .profile-subjects-skills-list li:hover .delete-subject{
+    opacity: 1;
 }
 
 .profile-main .properties .header-img{
@@ -804,6 +839,102 @@ footer h2{
     font-weight: 500;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.profiling label.edit-label{
+    display: none;
+}
+
+
+.profiling label.edit-submit-display{
+    display: inline;
+    color: skyblue;
+    cursor: pointer;
+    margin: 0.8em 0;
+    padding: 0.3em;
+}
+
+
+#open-edit-profile{
+    display: none;
+}
+
+/* CSS to display modal when checkbox is checked */
+#open-edit-profile:checked + .edit-profile-modal.modal {
+    display: flex;
+}
+
+/* CSS to hide modal when checkbox is unchecked */
+#open-edit-profile:not(:checked) ~ .edit-profile-modal.modal {
+    display: none;
+}
+
+
+
+.profiling .edit-experience .header-profile{
+    text-align: center;
+}
+
+.profiling .edit-experience textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.profiling .edit-education .header-profile{
+    text-align: center;
+}
+
+.profiling .edit-education textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+#open-edit-experience{
+    display: none;
+}
+
+#open-edit-experience:not(:checked) ~ .edit-experience-modal.modal{
+    display: none;
+} 
+
+#open-edit-experience:checked ~ .edit-experience-modal.modal{
+    display: flex;
+} 
+
+#open-edit-education{
+    display: none;
+}
+
+#open-edit-education:not(:checked) ~ .edit-education-modal.modal{
+    display: none;
+} 
+
+#open-edit-education:checked ~ .edit-education-modal.modal{
+    display: flex;
+} 
+
+
+
 .profile-details .profile-details-container{
     border-radius: 10px;
     border: 1px solid black;
@@ -840,6 +971,11 @@ footer h2{
     font-weight: 500;
 }
 
+.profile-main .profile-subjects-skills .self-view {
+    display: block;
+    transition: all 0.3s;
+} 
+
 /* profile media queries */
 
 @media (min-width: 720px) {
@@ -858,6 +994,7 @@ footer h2{
         flex-direction: row;
         flex-flow: row-reverse;
         gap: 2rem;
+        justify-content: space-around;
     }
     .profiling .profile-main .profile-main-head .profile-name-description .profile-description p {
         text-align: start;

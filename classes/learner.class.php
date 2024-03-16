@@ -33,8 +33,6 @@ class Learner{
         } else {
             return false;
         }
-
-
     }
 
     function getLastInsertedlearnerId() {
