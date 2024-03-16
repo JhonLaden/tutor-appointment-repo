@@ -74,12 +74,12 @@ class Tutor_profile{
         $query_tutor->execute();
 
         return true; // Both updates successful
-    } catch(PDOException $e) {
-        // Output any PDO exception errors for debugging
-        echo "Error: " . $e->getMessage();
-        return false;
+        } catch(PDOException $e) {
+            // Output any PDO exception errors for debugging
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
     }
-}
 
 function update_tutor_experience($tutorID, $experience) {
     try {
@@ -100,39 +100,62 @@ function update_tutor_experience($tutorID, $experience) {
 
         return true; // Both updates successful
     } catch(PDOException $e) {
-        // Output any PDO exception errors for debugging
-        echo "Error: " . $e->getMessage();
-        return false;
+            // Output any PDO exception errors for debugging
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
     }
-}
 
-function update_tutor_education($tutorID, $education) {
-    try {
-        // Update 'tutor_profile' table with description
-        $sql_profile = "UPDATE tutor_profile 
-                        SET education = :education 
-                        WHERE id_fk = :tutor_id";
-        
-        $query_profile = $this->db->connect()->prepare($sql_profile);
-        
-        // Bind parameters for tutor_profile table
-        $query_profile->bindParam(':tutor_id', $tutorID);
-        $query_profile->bindParam(':education', $education);
+    function update_tutor_education($tutorID, $education) {
+        try {
+            // Update 'tutor_profile' table with description
+            $sql_profile = "UPDATE tutor_profile 
+                            SET education = :education 
+                            WHERE id_fk = :tutor_id";
+            
+            $query_profile = $this->db->connect()->prepare($sql_profile);
+            
+            // Bind parameters for tutor_profile table
+            $query_profile->bindParam(':tutor_id', $tutorID);
+            $query_profile->bindParam(':education', $education);
 
-        // Execute query for tutor_profile table
-        $query_profile->execute();
+            // Execute query for tutor_profile table
+            $query_profile->execute();
 
 
-        return true; // Both updates successful
-    } catch(PDOException $e) {
-        // Output any PDO exception errors for debugging
-        echo "Error: " . $e->getMessage();
-        return false;
+            return true; // Both updates successful
+        } catch(PDOException $e) {
+            // Output any PDO exception errors for debugging
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
     }
-}
+
+    function update_tutor_services($tutorID, $services) {
+        try {
+            // Update 'tutor_profile' table with services
+            $sql_profile = "UPDATE tutor_profile 
+                            SET services = :services 
+                            WHERE id_fk = :tutor_id";
+            
+            $query_profile = $this->db->connect()->prepare($sql_profile);
+            
+            // Bind parameters for tutor_profile table
+            $query_profile->bindParam(':tutor_id', $tutorID);
+            $query_profile->bindParam(':services', $services);
+
+            // Execute query for tutor_profile table
+            $query_profile->execute();
+
+            return true; // Update successful
+        } catch(PDOException $e) {
+            // Output any PDO exception errors for debugging
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
+    }
     
-    
-    
+     
 }
 
 ?>

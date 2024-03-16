@@ -909,6 +909,16 @@ footer h2{
     resize: none;
 }
 
+.profiling .edit-services .header-profile{
+    text-align: center;
+}
+
+.profiling .edit-services textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
 #open-edit-experience{
     display: none;
 }
@@ -932,6 +942,19 @@ footer h2{
 #open-edit-education:checked ~ .edit-education-modal.modal{
     display: flex;
 } 
+
+#open-edit-services{
+    display: none;
+}
+
+#open-edit-services:not(:checked) ~ .edit-services-modal.modal{
+    display: none;
+} 
+
+#open-edit-services:checked ~ .edit-services-modal.modal{
+    display: flex;
+} 
+
 
 
 

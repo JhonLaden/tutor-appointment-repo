@@ -20,6 +20,7 @@
     $checker = '';
     $experienceChecker = '';
     $educationChecker = '';
+    $servicesChecker = '';
     $editSubmit = '';
     $addSubject = '';
     $deleteSubject = '';
@@ -104,6 +105,28 @@
             if($updatedTutorEducation){
                 $educationChecker = '';
                 unset($_POST['edit-education-submit']);
+                $account = $tutor->show_with_id($_GET['tutor_id']);
+            } 
+        }
+    }else if(isset($_POST['edit-services-submit'])){
+        $servicesChecker = 'checked';
+        $validated = 'true';
+
+        if($validated){
+            require_once '../classes/tutor_profile.class.php';
+            $tutorProfile = new Tutor_profile();
+
+            //injections
+            $tutorID = $_GET['tutor_id'];
+            $services = $_POST['services'];
+
+            // updating tutor experience
+            $updatedTutorServices = $tutorProfile->update_tutor_services($tutorID,$services);
+
+            // check if it is updated
+            if($updatedTutorServices){
+                $servicesChecker = '';
+                unset($_POST['edit-services-submit']);
                 $account = $tutor->show_with_id($_GET['tutor_id']);
             } 
         }
@@ -278,12 +301,28 @@
             <div class="profile-details">
                 <div class="offered-services profile-details-container ">
                     <p class="profile-details-header">My tutorial services includes:</p>
-                    <ol class="services-list">
-                        <li class="item">Teaching/Advance Study/Review</li>
-                        <li class="item">Assistance with your school requirements and:</li>
-                        <li class="item">A copy of the learning materials or presentation for easier learning</li>
-                    </ol>
-                    <p class="services-optional">PS: I accept students of any grade or year level and the payment rate is negotiable</p>
+
+                    <p class="services-optional"><?php echo $account[0]['services']?></p>
+
+                    <!-- Start edit services -->
+                    <input type="checkbox" name="input-checkbox" class="input-checkbox" id="open-edit-services" value="open-checkbox" <?php echo $servicesChecker ?>>
+                    <label class="edit-label <?php echo $editSubmit ?>" for="open-edit-services">Edit Services</label>
+
+                    <div class="modal edit-services-modal">
+                        <form class="modal-content edit-services" action="tutor-profile.php?tutor_id=<?php echo $_GET['tutor_id'] ?>" method="post">  
+                            <div class="header-profile">
+                                <h2>Tutor Services</h2>
+                            </div>
+                            <div class="input-container">
+                                <div class="input-container-item">
+                                    <label for="services">Services: </label>
+                                    <textarea name="services" id="services" required><?php echo $account[0]['services'] ?></textarea>
+                                </div>
+                            </div>
+                            <label for="open-edit-services">Cancel</label> <input type="submit" value="Save" name="edit-services-submit">
+                        </form>
+                    </div>
+                    <!-- End edit services -->
                 </div>
                 <div class="location profile-details-container">
                     <p class="location-p-container"><i class='bx bxs-map-pin'></i> Recodo, Zamboanga City</p>
@@ -295,10 +334,6 @@
                                 <button class="appointment-btn"><a href="../learner/appointment.php?tutor_id=<?php echo $_GET['tutor_id'] ?>">Make an appointment</a></button>
                             <?php   
                             }
-                            ?>
-                            
-                            
-                    <?php
                         }
                     ?>
                 </div>
