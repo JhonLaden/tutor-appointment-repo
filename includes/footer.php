@@ -68,8 +68,34 @@
     <!-- TESTING MODAL -->
     <script src = "../js/modals.js"></script>
 
+    <!-- for calendar library -->
     
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.11/index.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.11/index.global.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.11/index.global.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.11/index.js'></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
 
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        // Callback function called when the calendar is fully rendered
+        datesRender: function(info) {
+            // Get all the day cells representing Sundays
+            var sundayCells = document.querySelectorAll('.fc-day-sun');
+
+            // Iterate through each Sunday cell
+            sundayCells.forEach(function(sundayCell) {
+                // Change the background color to red for Sundays
+                sundayCell.style.backgroundColor = 'red';
+            });
+        }
+        });
+
+        calendar.render();
+    });
+    </script>
 </body>
 </html>

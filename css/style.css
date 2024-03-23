@@ -999,6 +999,41 @@ footer h2{
     transition: all 0.3s;
 } 
 
+.container-header .nav-sign .navbar-collapse .dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+.container-header .nav-sign .navbar-collapse .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--h-text);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    flex-direction: column;
+    top: 35px;
+    
+}
+
+.container-header .nav-sign .navbar-collapse .dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a{
+    padding: 0.2em 0.4em;
+
+}
+
+.dropdown-content a:hover{
+    text-decoration: underline;
+}
+
+
+
 /* profile media queries */
 
 @media (min-width: 720px) {

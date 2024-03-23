@@ -341,13 +341,7 @@
                     <p class="profile-details-header">Rating Breakdown</p>
                     <p class="reviews">(15) Reviews <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i> 4.8</p>
                 </div>
-                <?php
-                    if(isset($_SESSION['logged-in']['id']) == $_GET['tutor_id']){  ?> 
-                        <div class="scheduling-container">
-                            <a href="tutor-schedule.php?<?php $_SESSION['logged-in']['id']?>">visit schedule</a>
-                        </div>
-                <?php    }
-                ?>
+
                 
             </div>
         </div>

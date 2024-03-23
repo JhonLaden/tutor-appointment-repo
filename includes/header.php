@@ -14,7 +14,7 @@
     <link rel = "stylesheet" href = "../css/learner-profile.css">
     <link rel = "stylesheet" href = "../css/appointment.css">
     <link rel = "stylesheet" href = "../css/tutor-schedule.css">
-
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css' rel='stylesheet' />
 
 
     <!-- TESTING MODAL -->
@@ -42,12 +42,25 @@
                         if(isset($_SESSION['logged-in'])){
                             if($_SESSION['logged-in']['type'] == 'learner'){
                             ?>
-                            <button class= " "><a href="../learner/learner-profile.php?learner_id=<?php echo $_SESSION['logged-in']['id']?>"><?php echo $_SESSION['logged-in']['username'];?></a></button>
-                            <button class= ""> <a href="../includes/logout.php">Logout</a></button>
+                            <div class="dropdown">
+                                    <button class="profile-btn"><?php echo $_SESSION['logged-in']['username'];?></button>
+                                    <div class="dropdown-content">
+                                        <a href="../learner/learner-profile.php?tutor_id=<?php echo $_SESSION['logged-in']['id']?>">Profile</a>
+                                        <a href="../includes/logout.php">Logout</a>
+                                    </div>
+                                </div>
                         <?php
                             }else{?>
-                                <button class= ""><a href="../tutor/tutor-profile.php?tutor_id=<?php echo $_SESSION['logged-in']['id']?>"><?php echo $_SESSION['logged-in']['username'];?></a></button>
-                                <button class= ""> <a href="../includes/logout.php">Logout</a></button>
+                                <div class="dropdown">
+                                    <button class="profile-btn"><?php echo $_SESSION['logged-in']['username'];?></button>
+                                    <div class="dropdown-content">
+                                        <a href="../tutor/tutor-profile.php?tutor_id=<?php echo $_SESSION['logged-in']['id']?>">Profile</a>
+                                        <a href="../tutor/tutor-schedule.php">Schedule</a>
+                                        <a href="../calendar/calendar.php">Calendar</a>
+
+                                        <a href="../includes/logout.php">Logout</a>
+                                    </div>
+                                </div>
                             <?php
                             }
                         }else{
